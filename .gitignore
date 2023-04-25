@@ -1,3 +1,12 @@
-_site
+# Jekyll files (and custom `_site_mkdocs` folder)
+_site*
 .sass-cache
 .jekyll-metadata
+
+# These comes from mkdocs,
+# they should be overridden by docs/css/style.css and docs/js/script.js
+docs/css/base.css
+docs/js/base.js
+
+# Temporary diff files
+*.diff

@@ -1,0 +1,51 @@
+site_author:      "Zsolt Jurányi"
+site_description: "Sample page for Bootstrap 4 components. Try out the default theme or your custom stylesheet."
+site_name:        "Bootstrap 4 test page"
+site_url:         "https://juzraai.github.io"
+site_dir:         "_site_mkdocs"
+
+repo_name:        "GitHub"
+repo_url:         "https://github.com/redtide/bootstrap4-test-page"
+edit_uri:         "edit/mkdocs/docs/"
+remote_branch:    "www"
+
+copyright:
+  'Bootstrap 4 test page by <a href="https://juzraai.github.io/">juzraai</a>'
+
+extra_css:
+- "css/override.css"
+
+extra_javascript:
+- "js/override.js"
+
+theme:
+  name:       "mkdocs"
+  custom_dir: "mkdocs_theme/"
+  base_url:   "/bootstrap4-test-page"
+
+  highlightjs: true
+  hljs_style: "atom-one-dark"
+
+  nav_style:  "dark"
+
+plugins:
+  search: {}
+  exclude:
+    glob:
+    - "_includes/**"
+  macros:
+    include_dir: "docs/_includes"
+    include_yaml:
+    - colors:   "_data/colors.yml"
+    - sections: "_data/sections.yml"
+    verbose: true
+
+watch:
+- docs/_includes
+- docs/css
+- docs/js
+- mkdocs_theme
+
+nav:
+- "index.md"
+- "info.md"

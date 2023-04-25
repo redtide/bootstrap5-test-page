@@ -1,0 +1,7 @@
+{%- macro add(href, name, icon, blank=none) %}
+                  <a class="nav-item nav-link" href="{{ href }}" {% if blank %}target="_blank"{% endif %}
+                    data-toggle="tooltip" data-placement="bottom" title="{{ name }}">
+                    <span class="fa fa-{{ icon }} mx-2"></span>
+                    <span class="d-md-none">{{ name }}</span>
+                  </a>
+{%- endmacro %}

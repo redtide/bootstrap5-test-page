@@ -1,0 +1,25 @@
+/*
+  Overrides mkdocs' base.css
+*/
+#typography {
+  margin-top: -3rem;
+}
+/* don't mess with MKDocs' search and keyboard shortcuts modals */
+#modals .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
+}
+/*
+    Footer
+*/
+footer {
+  font-weight: 400; /* navbar inherits from body, footer not for some reason */
+}
+footer a:hover {
+  text-decoration: none;
+}
