@@ -1,0 +1,71 @@
+{%- import "macros/nav.j2" as nav with context %}
+{%- import "macros/color_modes.j2" as color_modes with context %}
+<div class="row px-5">
+  <div class="col-12">
+    <h3 class="mt-5">Navbars</h3>
+    {% for color in colors %}
+    <nav
+      {%- set classes = "navbar navbar-expand-lg my-2" %}
+      {%- set bg_style = color_modes.get_bg_style_from_color(color) %}
+      {{- color_modes.set_nav_style_with_color(classes, color) -}}
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-{{ color }}"
+          aria-controls="navbar-{{ color }}"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-{{ color }}" class="collapse navbar-collapse">
+          {{ nav.set_classes("navbar-nav") }}
+          <span class="navbar-text">Text</span>
+        </div>
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="{{ bg_style }}"
+          >
+          <button
+            class="btn btn-outline-{{ bg_style }}"
+            type="submit"
+            data-bs-theme="{{ bg_style }}"
+          >Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    {% endfor %}
+  </div>
+  <div class="col-md-6">
+    <h3 class="mt-5">Tabs</h3>
+    {{ nav.set_classes("nav nav-tabs") }}
+
+    <h3 class="mt-5">Pills</h3>
+    {{ nav.set_classes("nav nav-pills") }}
+  </div>
+  <div class="col-md-6">
+    <h3 class="mt-5">Vertical pills</h3>
+    {{ nav.set_classes("nav nav-pills flex-column") }}
+  </div>
+  <div class="col-12">
+    <h3 class="mt-5">Breadcrumbs</h3>
+    <div class="breadcrumb">
+      <a class="breadcrumb-item" href="#">Home</a>
+      <a class="breadcrumb-item" href="#">Library</a>
+      <a class="breadcrumb-item" href="#">Data</a>
+      <span class="breadcrumb-item active">Bootstrap</span>
+    </div>
+  </div>
+</div>

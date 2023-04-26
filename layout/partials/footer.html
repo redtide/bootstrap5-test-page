@@ -1,0 +1,17 @@
+{%- if config.theme.nav_style %}
+  {%- set bg_style = config.theme.nav_style %}
+{%- else %}
+  {%- set bg_style = "light" %}
+{%- endif %}
+<footer
+  class="bg-{{ bg_style }} text-bg-{{ bg_style }} mt-5 p-3"
+  data-bs-theme="{{ bg_style }}"
+>
+  <div class="container">
+    {{ config.site_name }} by
+    <a href="https://{{ config.site_author }}.github.io/"
+      class="text-info">{{ config.site_author }}</a>
+    &middot;
+    <a href="{{ config.repo_url }}/" class="text-info">Source code</a>
+  </div>
+</footer>

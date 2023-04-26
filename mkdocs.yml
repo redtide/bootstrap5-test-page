@@ -1,51 +1,47 @@
-site_author:      "Zsolt Jurányi"
-site_description: "Sample page for Bootstrap 4 components. Try out the default theme or your custom stylesheet."
-site_name:        "Bootstrap 4 test page"
-site_url:         "https://juzraai.github.io"
+site_name:        "Bootstrap 5 test page"
+site_author:      "redtide"
+site_url:         "https://redtide.github.io/bootstrap5-test-page"
 site_dir:         "_site_mkdocs"
+site_description:
+  "Sample page for Bootstrap 5 components.
+  Try out the default theme or your custom stylesheet."
 
 repo_name:        "GitHub"
-repo_url:         "https://github.com/redtide/bootstrap4-test-page"
+repo_url:         "https://github.com/redtide/bootstrap5-test-page"
 edit_uri:         "edit/mkdocs/docs/"
 remote_branch:    "www"
 
 copyright:
-  'Bootstrap 4 test page by <a href="https://juzraai.github.io/">juzraai</a>'
+  'Bootstrap 5 test page by <a href="https://redtide.github.io/">redtide</a>'
 
 extra_css:
-- "css/override.css"
+- "css/docs.css"
 
 extra_javascript:
-- "js/override.js"
+- "js/color-modes.js"
 
 theme:
-  name:       "mkdocs"
-  custom_dir: "mkdocs_theme/"
-  base_url:   "/bootstrap4-test-page"
-
+  name:        null
+  base_url:   "bootstrap5-test-page"
+  custom_dir: "layout"
   highlightjs: true
-  hljs_style: "atom-one-dark"
-
+  hljs_light: "github"
+  hljs_dark:  "github-dark-dimmed"
   nav_style:  "dark"
+  locale:     "en"
+  bootstrap_version: "5.3"
 
 plugins:
-  search: {}
-  exclude:
-    glob:
-    - "_includes/**"
   macros:
-    include_dir: "docs/_includes"
     include_yaml:
-    - colors:   "_data/colors.yml"
-    - sections: "_data/sections.yml"
+    - colors:    "docs/.data/colors.yml"
+    - sections:  "docs/.data/sections.yml"
+    include_dir: "docs/.include"
     verbose: true
 
 watch:
-- docs/_includes
-- docs/css
-- docs/js
-- mkdocs_theme
+- docs
+- layout
 
 nav:
 - "index.md"
-- "info.md"

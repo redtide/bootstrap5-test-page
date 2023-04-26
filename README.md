@@ -1,28 +1,21 @@
-# Bootstrap 4 test page
+# Bootstrap 5 test page
 
-## *Sample page for **[Bootstrap 4.3.x](https://getbootstrap.com/)***
+Sample page for [Bootstrap 5.3.x].
 
-*Version 1.0*
+Here the [Demo].
 
-**You can [download][dl] it and replace the URL of Bootstrap CSS to your custom stylesheet to test it.**
+## Features
 
-
-
-## Notes
-
-* I added [highlight.js](https://highlightjs.org/) to the code block with *Atom one dark* theme. (Toggleable.)
-* The page is assembled using Jekyll, you can find and download the single HTML in **[Releases][dl]**.
-
-
-
-## [Web demo](https://juzraai.github.io/bootstrap4-test-page/)
-
+- Color modes
+- [highlight.js] with automatic switchable light/dark styles
 
 ## Contributing
 
-* Have you find an issue? Do you have an idea? Create a ticket! :)
-* You fixed an issue or added something useful? Create a pull request! :)
+Feel free to contribute with a Pull Request or, if problems, create a new issue.
+Known issues are listed in the [TODO.md] file.
 
 
-
-[dl]: https://github.com/juzraai/bootstrap4-test-page/releases
+[Bootstrap 5.3.x]: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+[highlight.js]:    https://highlightjs.org/
+[Demo]:            https://redtide.github.io/bootstrap5-test-page/
+[TODO.md]:         TODO.md

@@ -1,0 +1,33 @@
+<div class="row px-5">
+  <div class="col-md-6">
+    <h3 class="mt-5">Contextual badges</h3>
+    <p>
+      {% for color in colors %}
+        <span class="badge text-bg-{{ color }} me-2 mb-2">{{ color | capitalize }}</span>
+      {% endfor %}
+    </p>
+
+    <h3 class="mt-5">Pill badges</h3>
+    <p>
+      {% for color in colors %}
+        <span class="badge text-bg-{{ color }} rounded-pill me-2 mb-2">{{ color|capitalize }}</span>
+      {% endfor %}
+    </p>
+
+    <h3 class="mt-5">Links</h3>
+    <p>
+      {% for color in colors %}
+        <a href="#badges" class="badge text-bg-{{ color }} me-2 mb-2">{{ color|capitalize }}</a>
+      {% endfor %}
+    </p>
+  </div>
+  <div class="col-md-6">
+    <h3 class="mt-5">Badges in headings</h3>
+    <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+    <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
+  </div>
+</div>

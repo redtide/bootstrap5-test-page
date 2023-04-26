@@ -1,0 +1,32 @@
+{%- import "macros/nav_link.j2" as nav_link with context %}
+{%- import "macros/color_modes.j2" as color_modes with context %}
+<nav {{- color_modes.set_nav_style("navbar sticky-top navbar-expand-md") }}>
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#test-navbar"
+      aria-controls="test-navbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="test-navbar" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        {%- for section in sections %}
+          {%- set link = '#' + section.name|lower|replace(' ','-') %}
+          {{- nav_link.add(link, section.name, section.icon) }}
+        {%- endfor %}
+      </ul>
+      <ul class="navbar-nav">
+        {%- set link = "https://getbootstrap.com/docs/" + config.theme.bootstrap_version + '/' %}
+        {{- nav_link.add(link, "Bootstrap documentation", "book", true) }}
+        {{- nav_link.add(config.repo_url, "Source code", config.repo_name|lower|trim) }}
+        {{- color_modes.get_icons() }}
+        {{- color_modes.get_dropdown() }}
+      </ul>
+    </div>
+  </div>
+</nav>

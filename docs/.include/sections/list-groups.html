@@ -1,0 +1,63 @@
+<div class="row px-5">
+  <div class="col-12">
+
+  </div>
+  <div class="col-md-6">
+    <h3 class="mt-5">...with actions and colors</h3>
+    <div class="list-group">
+      <button type="button" class="list-group-item list-group-item-action">This is a regular list group item</button>
+      {%- set color_classes = "active disabled " + colors|join(' ') %}
+      {%- set list_classes = color_classes.split(' ') %}
+      {%- for color in list_classes if color != "white" %}
+        {%- if color == "active" or color == "disabled" %}
+          {% set color_type = color %}
+        {%- endif %}
+        <button type="button" class="list-group-item list-group-item-action list-group-item-{{ color }} {%- if color_type %} {{ color_type }}{%- endif %}" >
+          This is a(n) {{ color }} list group item
+        </button>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <h3 class="mt-5">...with custom content</h3>
+    <ul class="list-group">
+        <a href="#list-groups">
+      <li class="list-group-item d-flex justify-content-between align-items-start active" aria-current="true">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Active list group item heading</div>
+            <p class="mb-1">
+            Donec id elit non mi porta gravida at eget metus.
+            Maecenas sed diam eget risus varius blandit.
+            </p>
+            <i>Donec id elit non mi porta.</i>
+          </div>
+          <span class="badge text-bg-success rounded-pill">3 days ago</span>
+      </li>
+        </a>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">List group item heading</div>
+            <p class="mb-1">
+            Donec id elit non mi porta gravida at eget metus.
+            Maecenas sed diam eget risus varius blandit.
+            </p>
+            <i>Donec id elit non mi porta.</i>
+        </div>
+        <span class="badge text-bg-warning rounded-pill">14 days ago</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">List group item heading</div>
+            <p class="mb-1">
+            Donec id elit non mi porta gravida at eget metus.
+            Maecenas sed diam eget risus varius blandit.
+            </p>
+            <i>Donec id elit non mi porta.</i>
+        </div>
+        <span class="badge text-bg-danger rounded-pill">45 days ago</span>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="mb-3"></div>

@@ -1,8 +1,4 @@
-<style>
-  body > .container {
-    margin-top: 0px;
-  }
-</style>
-
-{% include "_nav.html" %}
-{% include "_main.html" %}
+<div markdown="0">
+{% include "navigation.html" %}
+{% include "sections.html" %}
+</div>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html
+  id="top"
+  lang="{{ config.theme.locale|default('en') }}"
+  data-bs-theme="auto"
+>
+  <head>
+    {%- include "partials/meta.html" %}
+    {%- include "partials/styles.html" %}
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#test-navbar"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    {#- include "partials/header.html" #}
+    {{- page.content }}
+    {%- include "partials/footer.html" %}
+    {%- include "partials/scripts.html" %}
+  </body>
+</html>

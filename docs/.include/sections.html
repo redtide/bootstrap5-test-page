@@ -1,0 +1,40 @@
+{%- macro slugify(what) %}
+  {{ what|lower|replace(' ','-') }}
+{%- endmacro %}
+<main>
+{%- for section in sections %}
+  {%- set section_name_slug = slugify(section.name)|trim %}
+  <section id="{{ section_name_slug }}" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
+            <i class="fa fa-{{ section.icon }} me-1"></i>
+            {{ section.name }}
+          </h2>
+          <h2>
+            {%- for doc in section.docs %}
+            <a
+              href="https://getbootstrap.com/docs/{{ config.theme.bootstrap_version }}/{{ doc.link }}"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="{{ doc.text }} docs"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            {%- endfor %}
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    {%- include "sections/" + section_name_slug + ".html" %}
+    </div>
+  </section>
+{%- endfor %}
+</main>

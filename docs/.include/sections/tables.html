@@ -1,0 +1,85 @@
+{%- import "macros/table.j2" as table with context %}
+<div class="row px-5">
+  <div class="col-md-6">
+    <h3 class="mt-5">Table</h3>
+    {{ table.set_classes("table-bordered table-striped table-hover", none) }}
+  </div>
+  <div class="col-md-6">
+    <h3 class="mt-5">Inversed table</h3>
+    {{ table.set_classes("table-bordered table-striped table-hover table-dark", none) }}
+  </div>
+</div>
+<div class="row px-5">
+  <div class="col-md-6">
+    <h3 class="mt-5">Table with colors</h3>
+    <p><strong>Note: </strong> Use <code>table-*</code> classes.</p>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Column heading</th>
+          <th>Column heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Default</th>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        {%- set color_classes = "active " + colors|join(' ') %}
+        {%- set list_classes = color_classes.split(' ') %}
+        {% for color in list_classes if color != "white" %}
+          <tr class="table-{{ color }}">
+            <th scope="row">{{ color|capitalize }}</th>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3 class="mt-5">Inversed table with colors</h3>
+    <p><strong>Note: </strong> Use <code>table-*</code> classes, also for colors.</p>
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Column heading</th>
+          <th>Column heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Default</th>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+      {% for color in colors if color != "white" %}
+        <tr class="table-{{ color }}">
+          <th scope="row">{{ color|capitalize }}</th>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row px-5">
+  <div class="col-md-6">
+    <h3 class="mt-5">Default header</h3>
+    {{ table.set_classes(none, "table-light") }}
+  </div>
+  <div class="col-md-6">
+    <h3 class="mt-5">Inversed header</h3>
+    {{ table.set_classes(none, "table-dark") }}
+  </div>
+</div>
+<div class="row px-5">
+  <div class="col-md-6">
+    <h3 class="mt-5">Small table</h3>
+    {{ table.set_classes("table-sm", none) }}
+  </div>
+</div>
