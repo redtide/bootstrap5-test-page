@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,13 @@
         <link rel="canonical" href="https://juzraai.github.io/">
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Bootstrap 5 test page</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css" id="hljs-theme">
+        <script src="js/color-modes.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.min.css" integrity="sha512-iGjGmwIm1UHNaSuwiNFfB3+HpzT/YLJMiYPKzlQEVpT6FWi5rfpbyrBuTPseScOCWBkRtsrRIbrTzJpQ02IaLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="css/base.css" rel="stylesheet">
-        <link href="css/override.css" rel="stylesheet"> 
+        <link href="css/override.css" rel="stylesheet">
+        <link href="css/docs.css" rel="stylesheet"> 
     </head>
 
     <body class="homepage">
@@ -29,10 +31,10 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
+                            <li class="nav-item active">
                                 <a href="." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="info/" class="nav-link">Info</a>
                             </li>
                         </ul>
@@ -56,6 +58,59 @@
                             <li class="nav-item">
                                 <a href="https://github.com/redtide/bootstrap5-test-page/edit/mkdocs/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
+                      
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+                      
+          <li class="vr"></li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-label="Toggle theme (auto)">
+              <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+              <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                  Light
+                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
+                  Dark
+                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
+                  Auto
+                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                </button>
+              </li>
+            </ul>
+          </li>
                     </ul>
                 </div>
             </div>
@@ -63,12 +118,18 @@
 
         <div class="container">
             <div class="row">
-        <div role="main">
-            <style>
+                    
+                    
+                    <div role="main">
+
+<style>
   body > .container {
-    margin-top: 0px;
+    margin-top: 63px;
   }
 </style>
+<div markdown="0">
+
+
 
 <div class="container-flex">
   <div class="
@@ -91,174 +152,341 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="my-navbar">
-        <div class="navbar-nav me-auto">
+        <ul class="navbar-nav me-auto">
 
 
 
-                  <a class="nav-item nav-link" href="#typography" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Typography">
-                    <span class="fa fa-paragraph mx-2"></span>
-                    <span class="d-md-none">Typography</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#typography"
+                      title="Typography"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-paragraph mx-2"></span>
+                      <span class="d-md-none">Typography</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#images" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Images">
-                    <span class="fa fa-picture-o mx-2"></span>
-                    <span class="d-md-none">Images</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#images"
+                      title="Images"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-picture-o mx-2"></span>
+                      <span class="d-md-none">Images</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#tables" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Tables">
-                    <span class="fa fa-table mx-2"></span>
-                    <span class="d-md-none">Tables</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#tables"
+                      title="Tables"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-table mx-2"></span>
+                      <span class="d-md-none">Tables</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#list-groups" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="List groups">
-                    <span class="fa fa-list-ul mx-2"></span>
-                    <span class="d-md-none">List groups</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#list-groups"
+                      title="List groups"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-list-ul mx-2"></span>
+                      <span class="d-md-none">List groups</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#buttons" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Buttons">
-                    <span class="fa fa-square mx-2"></span>
-                    <span class="d-md-none">Buttons</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#buttons"
+                      title="Buttons"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-square mx-2"></span>
+                      <span class="d-md-none">Buttons</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#jumbotrons" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Jumbotrons">
-                    <span class="fa fa-bookmark mx-2"></span>
-                    <span class="d-md-none">Jumbotrons</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#offcanvas"
+                      title="Offcanvas"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-arrow-right mx-2"></span>
+                      <span class="d-md-none">Offcanvas</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#cards" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Cards">
-                    <span class="fa fa-square-o mx-2"></span>
-                    <span class="d-md-none">Cards</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#jumbotrons"
+                      title="Jumbotrons"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-bookmark mx-2"></span>
+                      <span class="d-md-none">Jumbotrons</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#forms" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Forms">
-                    <span class="fa fa-pencil mx-2"></span>
-                    <span class="d-md-none">Forms</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#cards"
+                      title="Cards"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-square-o mx-2"></span>
+                      <span class="d-md-none">Cards</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#navs" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Navs">
-                    <span class="fa fa-bars mx-2"></span>
-                    <span class="d-md-none">Navs</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#forms"
+                      title="Forms"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-pencil mx-2"></span>
+                      <span class="d-md-none">Forms</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#badges" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Badges">
-                    <span class="fa fa-tag mx-2"></span>
-                    <span class="d-md-none">Badges</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#navs"
+                      title="Navs"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-bars mx-2"></span>
+                      <span class="d-md-none">Navs</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#alerts" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Alerts">
-                    <span class="fa fa-exclamation-triangle mx-2"></span>
-                    <span class="d-md-none">Alerts</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#badges"
+                      title="Badges"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-tag mx-2"></span>
+                      <span class="d-md-none">Badges</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#popovers" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Popovers">
-                    <span class="fa fa-info-circle mx-2"></span>
-                    <span class="d-md-none">Popovers</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#alerts"
+                      title="Alerts"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-exclamation-triangle mx-2"></span>
+                      <span class="d-md-none">Alerts</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#progress-bars" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Progress bars">
-                    <span class="fa fa-spinner mx-2"></span>
-                    <span class="d-md-none">Progress bars</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#popovers"
+                      title="Popovers"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-info-circle mx-2"></span>
+                      <span class="d-md-none">Popovers</span>
+                    </a>
+                  </li>
 
 
 
-                  <a class="nav-item nav-link" href="#modals" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Modals">
-                    <span class="fa fa-window-restore mx-2"></span>
-                    <span class="d-md-none">Modals</span>
-                  </a>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#progress-bars"
+                      title="Progress bars"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
 
-        </div>
-        <div class="navbar-nav">
+                    >
+                      <span class="fa fa-spinner mx-2"></span>
+                      <span class="d-md-none">Progress bars</span>
+                    </a>
+                  </li>
 
-                  <a class="nav-item nav-link" href="https://getbootstrap.com/docs/4.1/" target="_blank"
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Bootstrap documentation">
-                    <span class="fa fa-book mx-2"></span>
-                    <span class="d-md-none">Bootstrap documentation</span>
-                  </a>
 
-                  <a class="nav-item nav-link" href="https://github.com/juzraai/bootstrap4-test-page" 
-                    data-bs-toggle="tooltip" data-placement="bottom" title="Source code">
-                    <span class="fa fa-github mx-2"></span>
-                    <span class="d-md-none">Source code</span>
-                  </a>
-        </div>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#modals"
+                      title="Modals"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-window-restore mx-2"></span>
+                      <span class="d-md-none">Modals</span>
+                    </a>
+                  </li>
+
+        </ul>
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://getbootstrap.com/docs/5.3/"
+                      title="Bootstrap documentation"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+                      target="_blank"
+                    >
+                      <span class="fa fa-book mx-2"></span>
+                      <span class="d-md-none">Bootstrap documentation</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/juzraai/bootstrap4-test-page"
+                      title="Source code"
+                      data-bs-toggle="tooltip"
+                      data-placement="bottom"
+
+                    >
+                      <span class="fa fa-github mx-2"></span>
+                      <span class="d-md-none">Source code</span>
+                    </a>
+                  </li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
-<div>
-
-
-<section class="mb-5 pt-5" id="typography">
-  <div class="bg-light py-4 mb-5">
+<section id="typography">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-paragraph me-1"></span>
+          <h1>
+            <i class="fa fa-paragraph me-1"></i>
             Typography
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/content/typography/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Typography docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/content/code/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Code docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/utilities/colors/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Color utility docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/utilities/text/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Text utility docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/content/typography/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Typography docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/content/reboot/#inline-code"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Code docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/utilities/colors/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Color utility docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/utilities/text/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Text utility docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Headings</h3>
+    <h3>Headings</h3>
     <h1>h1. Bootstrap heading</h1>
     <h2>h2. Bootstrap heading</h2>
     <h3>h3. Bootstrap heading</h3>
@@ -266,10 +494,10 @@
     <h5>h5. Bootstrap heading</h5>
     <h6>h6. Bootstrap heading</h6>
 
-    <h3 class="mt-5">Lead</h3>
+    <h3>Lead</h3>
     <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
-    <h3 class="mt-5">Styles</h3>
+    <h3>Styles</h3>
     <p>You can use the mark tag to
       <mark>highlight</mark> text.</p>
     <p>
@@ -287,54 +515,50 @@
     <p><small>This line of text is meant to be treated as fine print.</small></p>
     <p><strong>This line rendered as bold text.</strong></p>
     <p><em>This line rendered as italicized text.</em></p>
-    <p class="text-muted">And this is a muted text.</p>
+    <p class="text-body-secondary">And this is a muted text.</p>
     <p><abbr title="Abbreviation">abbr</abbr> <abbr title="Abbreviation with initialism" class="initialism">abbr+init</abbr></p>
 
-    <h3 class="mt-5">Colors</h3>
+    <h3>Colors</h3>
     <p>
 
-      <span class="text-primary">.text-primary</span>
+      <span class="text-bg-primary">.text-bg-primary</span>
 
-      <span class="text-secondary">.text-secondary</span>
+      <span class="text-bg-secondary">.text-bg-secondary</span>
 
-      <span class="text-success">.text-success</span>
+      <span class="text-bg-success">.text-bg-success</span>
 
-      <span class="text-danger">.text-danger</span>
+      <span class="text-bg-info">.text-bg-info</span>
 
-      <span class="text-warning">.text-warning</span>
+      <span class="text-bg-warning">.text-bg-warning</span>
 
-      <span class="text-info">.text-info</span>
+      <span class="text-bg-danger">.text-bg-danger</span>
 
-      <span class="text-light">.text-light</span>
+      <span class="text-bg-light">.text-bg-light</span>
 
-      <span class="text-dark">.text-dark</span>
-
-      <span class="text-white">.text-white</span>
+      <span class="text-bg-dark">.text-bg-dark</span>
 
     </p>
     <p>
 
-      <span><a href="#" class="text-primary">Primary link</a></span>
+      <span><a href="#" class="text-bg-primary">Primary link</a></span>
 
-      <span><a href="#" class="text-secondary">Secondary link</a></span>
+      <span><a href="#" class="text-bg-secondary">Secondary link</a></span>
 
-      <span><a href="#" class="text-success">Success link</a></span>
+      <span><a href="#" class="text-bg-success">Success link</a></span>
 
-      <span><a href="#" class="text-danger">Danger link</a></span>
+      <span><a href="#" class="text-bg-info">Info link</a></span>
 
-      <span><a href="#" class="text-warning">Warning link</a></span>
+      <span><a href="#" class="text-bg-warning">Warning link</a></span>
 
-      <span><a href="#" class="text-info">Info link</a></span>
+      <span><a href="#" class="text-bg-danger">Danger link</a></span>
 
-      <span><a href="#" class="text-light">Light link</a></span>
+      <span><a href="#" class="text-bg-light">Light link</a></span>
 
-      <span><a href="#" class="text-dark">Dark link</a></span>
-
-      <span><a href="#" class="text-white">White link</a></span>
+      <span><a href="#" class="text-bg-dark">Dark link</a></span>
 
     </p>
 
-    <h3 class="mt-5">Inline code</h3>
+    <h3>Inline code</h3>
     <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
     <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
     <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br> To edit settings, press <kbd><kbd>ctrl</kbd>            + <kbd>,</kbd></kbd>
@@ -342,13 +566,13 @@
     <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Displays</h3>
+    <h3>Displays</h3>
     <h1 class="display-1">Display 1</h1>
     <h1 class="display-2">Display 2</h1>
     <h1 class="display-3">Display 3</h1>
     <h1 class="display-4">Display 4</h1>
 
-    <h3 class="mt-5">Sample body</h3>
+    <h3>Sample body</h3>
     <p class="text-justify">
       Lórum ipse - mint senyért - nyált <a href="javascript:void(0)">ságos iség</a>, ahol beles metás, csaprozás, vermény, csaprát
       és más meni zsorlóca kuncáskodik. Mosztag, férzet napé, fuvódás 11, törnyélés ; valamint szuvegés vitancs: a dozmus drikója,
@@ -360,8 +584,7 @@
       a nyagondos hizmusok „énemlő” lárias mizmusait?
     </p>
 
-    <h3 class="mt-5">Code block</h3>
-    <button class="btn btn-sm btn-primary my-1" id="hljs-theme-toggler">Toggle HLJS theme</button>
+    <h3>Code block</h3>
     <pre><code>/**
  * @author John Smith &lt;john.smith@example.com&gt;
  */
@@ -382,34 +605,46 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Blockquote</h3>
-    <blockquote class="blockquote">
-      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
+    <h3>Blockquote</h3>
+    <figure class="text-start">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </blockquote>
+    </figure>
+  </div>
+</div>
+<div class="row px-5">
+  <div class="col-12 mb-0">
+    <h3>...centered</h3>
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </blockquote>
+    </figure>
   </div>
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">...centered</h3>
-    <blockquote class="blockquote text-center">
-      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
-  </div>
-</div>
-<div class="row px-5">
-  <div class="col-12">
-    <h3 class="mt-5">...on right</h3>
-    <blockquote class="blockquote text-right">
-      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
+    <h3>...on right</h3>
+    <figure class="text-end">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </blockquote>
+    <figure>
   </div>
 </div>
 <div class="row px-5">
   <div class="col-4">
-    <h3 class="mt-5">List</h3>
+    <h3>List</h3>
     <ul>
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -429,192 +664,184 @@ public abstract class L2Char extends L2Object {
     </ul>
   </div>
   <div class="col-4">
-    <h3 class="mt-5">...unstyled</h3>
+    <h3>...unstyled</h3>
     <ul class="list-unstyled">
-      <li>Lorem ipsum dolor sit amet</li>
-      <li>Consectetur adipiscing elit</li>
-      <li>Integer molestie lorem at massa</li>
-      <li>Facilisis in pretium nisl aliquet</li>
-      <li>Nulla volutpat aliquam velit
+      <li>This is a list.</li>
+      <li>It appears completely unstyled.</li>
+      <li>Structurally, it's still a list.</li>
+      <li>However, this style only applies to immediate child elements.</li>
+      <li>Nested lists:
         <ul>
-          <li>Phasellus iaculis neque</li>
-          <li>Purus sodales ultricies</li>
-          <li>Vestibulum laoreet porttitor sem</li>
-          <li>Ac tristique libero volutpat at</li>
+          <li>are unaffected by this style</li>
+          <li>will still show a bullet</li>
+          <li>and have appropriate left margin</li>
         </ul>
       </li>
-      <li>Faucibus porta lacus fringilla vel</li>
-      <li>Aenean sit amet erat nunc</li>
-      <li>Eget porttitor lorem</li>
+      <li>This may still come in handy in some situations.</li>
     </ul>
   </div>
   <div class="col-4">
-    <h3 class="mt-5">...inline</h3>
-    <ul class="list-inline">
-      <li class="list-inline-item">Lorem ipsum</li>
-      <li class="list-inline-item">Phasellus iaculis</li>
-      <li class="list-inline-item">Nulla volutpat</li>
-    </ul>
+    <h3>...inline</h3>
+      <ul class="list-inline">
+        <li class="list-inline-item">This is a list item.</li>
+        <li class="list-inline-item">And another one.</li>
+        <li class="list-inline-item">But they're displayed inline.</li>
+      </ul>
   </div>
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Definition list</h3>
+    <h3>Definition list</h3>
   </div>
 </div>
-<dl class="row px-5">
+<dl class="row">
   <dt class="col-sm-3">Description lists</dt>
   <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
 
-  <dt class="col-sm-3">Euismod</dt>
+  <dt class="col-sm-3">Term</dt>
   <dd class="col-sm-9">
-    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-    <p>Donec id elit non mi porta gravida at eget metus.</p>
+    <p>Definition for the term.</p>
+    <p>And some more placeholder definition text.</p>
   </dd>
 
-  <dt class="col-sm-3">Malesuada porta</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+  <dt class="col-sm-3">Another term</dt>
+  <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
 
   <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+  <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
 
   <dt class="col-sm-3">Nesting</dt>
   <dd class="col-sm-9">
     <dl class="row">
       <dt class="col-sm-4">Nested definition list</dt>
-      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+      <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
     </dl>
   </dd>
 </dl>
 
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Background colors</h3>
+    <h3>Background colors</h3>
   </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 mb-2 text-bg-primary">.text-bg-primary</div>
       </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 mb-2 text-bg-secondary">.text-bg-secondary</div>
       </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 mb-2 text-bg-success">.text-bg-success</div>
       </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 mb-2 text-bg-info">.text-bg-info</div>
       </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 mb-2 text-bg-warning">.text-bg-warning</div>
       </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+        <div class="p-3 mb-2 text-bg-danger">.text-bg-danger</div>
       </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+        <div class="p-3 mb-2 text-bg-light">.text-bg-light</div>
       </div>
 
-
-
-
       <div class="col-md-4">
-        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-      </div>
-
-
-
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+        <div class="p-3 mb-2 text-bg-dark">.text-bg-dark</div>
       </div>
 
   </div>
 </div>
   </div>
 </section>
-<section class="mb-5 pt-5" id="images">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="images">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-picture-o me-1"></span>
+          <h1>
+            <i class="fa fa-picture-o me-1"></i>
             Images
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/content/images/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Image docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/content/figures/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Figure docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/layout/media-object/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Media object docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/content/images/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Image docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/content/figures/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Figure docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/utilities/flex/#media-object"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Media object docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Responsive image</h3>
+    <h3>Responsive image</h3>
     <img data-src="holder.js/100px250" alt="responsive image" class="img-fluid">
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Thumbnail</h3>
+    <h3>Thumbnail</h3>
     <img data-src="holder.js/200x200" alt="thumbnail image" class="img-thumbnail">
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Figure</h3>
+    <h3>Figure</h3>
     <figure class="figure">
       <img data-src="holder.js/300x200" class="figure-img img-fluid rounded" alt="Figure">
       <figcaption class="figure-caption">A caption for the above image.</figcaption>
     </figure>
   </div>
   <div class="col-12">
-    <h3 class="mt-5">Media</h3>
-    <div class="media">
-      <img class="d-flex me-3" data-src="holder.js/64x64" alt="Generic placeholder image">
-      <div class="media-body">
+    <h3>Media</h3>
+    <p>
+    In v5 the <code>.media</code> component was dropped as it can be
+    easily replicated with utilities.
+    See <a href="https://github.com/twbs/bootstrap/pull/28265">#28265</a> and the
+    <a href="https://getbootstrap.com/docs/5.3/utilities/flex/#media-object">flex utilities page</a> for an example.
+    </p>
+    <div class="d-flex me-3">
+      <div class="flex-shrink-0">
+        <img data-src="holder.js/64x64" alt="Generic placeholder image">
+      </div>
+      <div class="flex-grow-1 ms-3">
         <h5 class="mt-0">Media heading</h5>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-        vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
-        faucibus.
-
-        <div class="media mt-3">
-          <a class="d-flex pe-3" href="#">
-          <img data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-          <div class="media-body">
+        This is some content from a media component.
+        You can replace this with any content and adjust it as needed.
+        <div class="d-flex me-3 mt-3">
+          <div class="flex-shrink-0">
+            <img data-src="holder.js/64x64" alt="Generic placeholder image">
+          </div>
+          <div class="flex-grow-1 ms-3">
             <h5 class="mt-0">Media heading</h5>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
             vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
@@ -627,100 +854,119 @@ public abstract class L2Char extends L2Object {
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="tables">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="tables">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-table me-1"></span>
+          <h1>
+            <i class="fa fa-table me-1"></i>
             Tables
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/content/tables/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Table docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/content/tables/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Table docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
   <div class="container">
-
 <div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Table</h3>
+    <h3>Table</h3>
 
 <table class="table table-bordered table-striped table-hover">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <th scope="row">Footer</th>
+      <td>Footer</td>
+      <td>Footer</td>
+      <td>Footer</td>
+    </tr>
+  </tfoot>
 </table>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Inversed table</h3>
+    <h3>Inversed table</h3>
 
 <table class="table table-bordered table-striped table-hover table-dark">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <th scope="row">Footer</th>
+      <td>Footer</td>
+      <td>Footer</td>
+      <td>Footer</td>
+    </tr>
+  </tfoot>
 </table>
   </div>
 </div>
 <div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Table with colors</h3>
+    <h3>Table with colors</h3>
     <p><strong>Note: </strong> Use <code>table-*</code> classes.</p>
     <table class="table table-hover">
       <thead>
@@ -736,6 +982,12 @@ public abstract class L2Char extends L2Object {
           <td>Column content</td>
           <td>Column content</td>
         </tr>
+
+          <tr class="table-active">
+            <th scope="row">Active</th>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
 
           <tr class="table-primary">
             <th scope="row">Primary</th>
@@ -755,8 +1007,8 @@ public abstract class L2Char extends L2Object {
             <td>Column content</td>
           </tr>
 
-          <tr class="table-danger">
-            <th scope="row">Danger</th>
+          <tr class="table-info">
+            <th scope="row">Info</th>
             <td>Column content</td>
             <td>Column content</td>
           </tr>
@@ -767,8 +1019,8 @@ public abstract class L2Char extends L2Object {
             <td>Column content</td>
           </tr>
 
-          <tr class="table-info">
-            <th scope="row">Info</th>
+          <tr class="table-danger">
+            <th scope="row">Danger</th>
             <td>Column content</td>
             <td>Column content</td>
           </tr>
@@ -785,18 +1037,12 @@ public abstract class L2Char extends L2Object {
             <td>Column content</td>
           </tr>
 
-          <tr class="table-active">
-            <th scope="row">Active</th>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-
       </tbody>
     </table>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Inversed table with colors</h3>
-    <p><strong>Note: </strong> Use <code>bg-*</code> and <code>text-*</code> classes.</p>
+    <h3>Inversed table with colors</h3>
+    <p><strong>Note: </strong> Use <code>table-*</code> classes, also for colors.</p>
     <table class="table table-hover table-dark">
       <thead>
         <tr>
@@ -812,73 +1058,49 @@ public abstract class L2Char extends L2Object {
           <td>Column content</td>
         </tr>
 
-
-
-
-        <tr class="bg-primary">
+        <tr class="table-primary">
           <th scope="row">Primary</th>
           <td>Column content</td>
           <td>Column content</td>
         </tr>
 
-
-
-
-        <tr class="bg-secondary">
+        <tr class="table-secondary">
           <th scope="row">Secondary</th>
           <td>Column content</td>
           <td>Column content</td>
         </tr>
 
-
-
-
-        <tr class="bg-success">
+        <tr class="table-success">
           <th scope="row">Success</th>
           <td>Column content</td>
           <td>Column content</td>
         </tr>
 
-
-
-
-        <tr class="bg-danger">
-          <th scope="row">Danger</th>
-          <td>Column content</td>
-          <td>Column content</td>
-        </tr>
-
-
-
-
-        <tr class="bg-warning text-dark">
-          <th scope="row">Warning</th>
-          <td>Column content</td>
-          <td>Column content</td>
-        </tr>
-
-
-
-
-        <tr class="bg-info">
+        <tr class="table-info">
           <th scope="row">Info</th>
           <td>Column content</td>
           <td>Column content</td>
         </tr>
 
+        <tr class="table-warning">
+          <th scope="row">Warning</th>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
 
+        <tr class="table-danger">
+          <th scope="row">Danger</th>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
 
-
-        <tr class="bg-light text-dark">
+        <tr class="table-light">
           <th scope="row">Light</th>
           <td>Column content</td>
           <td>Column content</td>
         </tr>
 
-
-
-
-        <tr class="bg-dark">
+        <tr class="table-dark">
           <th scope="row">Dark</th>
           <td>Column content</td>
           <td>Column content</td>
@@ -890,248 +1112,303 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Default header</h3>
+    <h3>Default header</h3>
 
 <table class="table">
-    <thead class="thead-light">
-        <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
+  <thead class="table-light">
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <th scope="row">Footer</th>
+      <td>Footer</td>
+      <td>Footer</td>
+      <td>Footer</td>
+    </tr>
+  </tfoot>
 </table>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Inversed header</h3>
+    <h3>Inversed header</h3>
 
 <table class="table">
-    <thead class="thead-dark">
-        <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <th scope="row">Footer</th>
+      <td>Footer</td>
+      <td>Footer</td>
+      <td>Footer</td>
+    </tr>
+  </tfoot>
 </table>
   </div>
 </div>
 <div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Small table</h3>
+    <h3>Small table</h3>
 
 <table class="table table-sm">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <th scope="row">Footer</th>
+      <td>Footer</td>
+      <td>Footer</td>
+      <td>Footer</td>
+    </tr>
+  </tfoot>
 </table>
   </div>
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="list-groups">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="list-groups">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-list-ul me-1"></span>
+          <h1>
+            <i class="fa fa-list-ul me-1"></i>
             List groups
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/list-group/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="List group docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/list-group/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="List group docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-12">
 
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">...with actions and colors</h3>
+    <h3>...with actions and colors</h3>
     <div class="list-group">
       <button type="button" class="list-group-item list-group-item-action">This is a regular list group item</button>
 
-        <button type="button" class="list-group-item list-group-item-action list-group-item-primary" >
-          This is a(n) primary list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-secondary" >
-          This is a(n) secondary list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-success" >
-          This is a(n) success list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-danger" >
-          This is a(n) danger list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-warning" >
-          This is a(n) warning list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-info" >
-          This is a(n) info list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-light" >
-          This is a(n) light list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-dark" >
-          This is a(n) dark list group item
-        </button>
-
-        <button type="button" class="list-group-item list-group-item-action list-group-item-active" >
+        <button type="button" class="list-group-item list-group-item-action list-group-item-active active" >
           This is a(n) active list group item
         </button>
 
-        <button type="button" class="list-group-item list-group-item-action list-group-item-disabled" >
+        <button type="button" class="list-group-item list-group-item-action list-group-item-disabled disabled" >
           This is a(n) disabled list group item
         </button>
-
+        <button type="button" class="list-group-item list-group-item-action list-group-item-primary" >
+          This is a(n) primary list group item
+        </button>
+        <button type="button" class="list-group-item list-group-item-action list-group-item-secondary" >
+          This is a(n) secondary list group item
+        </button>
+        <button type="button" class="list-group-item list-group-item-action list-group-item-success" >
+          This is a(n) success list group item
+        </button>
+        <button type="button" class="list-group-item list-group-item-action list-group-item-info" >
+          This is a(n) info list group item
+        </button>
+        <button type="button" class="list-group-item list-group-item-action list-group-item-warning" >
+          This is a(n) warning list group item
+        </button>
+        <button type="button" class="list-group-item list-group-item-action list-group-item-danger" >
+          This is a(n) danger list group item
+        </button>
+        <button type="button" class="list-group-item list-group-item-action list-group-item-light" >
+          This is a(n) light list group item
+        </button>
+        <button type="button" class="list-group-item list-group-item-action list-group-item-dark" >
+          This is a(n) dark list group item
+        </button>
     </div>
   </div>
+
   <div class="col-md-6">
-    <h3 class="mt-5">...with custom content</h3>
-    <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">List group item heading</h5>
-          <small>3 days ago</small>
+    <h3>...with custom content</h3>
+    <ul class="list-group">
+        <a href="#list-groups">
+      <li class="list-group-item d-flex justify-content-between align-items-start active" aria-current="true">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Active list group item heading</div>
+            <p class="mb-1">
+            Donec id elit non mi porta gravida at eget metus.
+            Maecenas sed diam eget risus varius blandit.
+            </p>
+            <i>Donec id elit non mi porta.</i>
+          </div>
+          <span class="badge text-bg-success rounded-pill">3 days ago</span>
+      </li>
+        </a>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">List group item heading</div>
+            <p class="mb-1">
+            Donec id elit non mi porta gravida at eget metus.
+            Maecenas sed diam eget risus varius blandit.
+            </p>
+            <i>Donec id elit non mi porta.</i>
         </div>
-        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        <small>Donec id elit non mi porta.</small>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">List group item heading</h5>
-          <small class="text-muted">3 days ago</small>
+        <span class="badge text-bg-warning rounded-pill">14 days ago</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">List group item heading</div>
+            <p class="mb-1">
+            Donec id elit non mi porta gravida at eget metus.
+            Maecenas sed diam eget risus varius blandit.
+            </p>
+            <i>Donec id elit non mi porta.</i>
         </div>
-        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        <small class="text-muted">Donec id elit non mi porta.</small>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">List group item heading</h5>
-          <small class="text-muted">3 days ago</small>
-        </div>
-        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        <small class="text-muted">Donec id elit non mi porta.</small>
-      </a>
-    </div>
+        <span class="badge text-bg-danger rounded-pill">45 days ago</span>
+      </li>
+    </ul>
   </div>
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="buttons">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="buttons">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-square me-1"></span>
+          <h1>
+            <i class="fa fa-square me-1"></i>
             Buttons
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Button docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/button-group/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Button group docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/pagination/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Pagination docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/dropdowns/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Dropdown docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/buttons/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Button docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/button-group/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Button group docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/pagination/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Pagination docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/dropdowns/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Dropdown docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
   <div class="container">
-
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">General buttons</h3>
+    <h3>General buttons</h3>
     <div class="my-1">
 
         <button class="btn btn-primary">Primary</button>
@@ -1140,11 +1417,11 @@ public abstract class L2Char extends L2Object {
 
         <button class="btn btn-success">Success</button>
 
-        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-info">Info</button>
 
         <button class="btn btn-warning">Warning</button>
 
-        <button class="btn btn-info">Info</button>
+        <button class="btn btn-danger">Danger</button>
 
         <button class="btn btn-light">Light</button>
 
@@ -1162,11 +1439,11 @@ public abstract class L2Char extends L2Object {
 
         <button class="btn btn-success active">Success</button>
 
-        <button class="btn btn-danger active">Danger</button>
+        <button class="btn btn-info active">Info</button>
 
         <button class="btn btn-warning active">Warning</button>
 
-        <button class="btn btn-info active">Info</button>
+        <button class="btn btn-danger active">Danger</button>
 
         <button class="btn btn-light active">Light</button>
 
@@ -1184,11 +1461,11 @@ public abstract class L2Char extends L2Object {
 
         <button class="btn btn-success" disabled>Success</button>
 
-        <button class="btn btn-danger" disabled>Danger</button>
+        <button class="btn btn-info" disabled>Info</button>
 
         <button class="btn btn-warning" disabled>Warning</button>
 
-        <button class="btn btn-info" disabled>Info</button>
+        <button class="btn btn-danger" disabled>Danger</button>
 
         <button class="btn btn-light" disabled>Light</button>
 
@@ -1199,7 +1476,7 @@ public abstract class L2Char extends L2Object {
       <button class="btn" disabled>Default</button>
     </div>
 
-    <h3 class="mt-5">Outline buttons</h3>
+    <h3>Outline buttons</h3>
     <div class="my-1">
 
         <button class="btn btn-outline-primary">Primary</button>
@@ -1208,11 +1485,11 @@ public abstract class L2Char extends L2Object {
 
         <button class="btn btn-outline-success">Success</button>
 
-        <button class="btn btn-outline-danger">Danger</button>
+        <button class="btn btn-outline-info">Info</button>
 
         <button class="btn btn-outline-warning">Warning</button>
 
-        <button class="btn btn-outline-info">Info</button>
+        <button class="btn btn-outline-danger">Danger</button>
 
         <button class="btn btn-outline-light">Light</button>
 
@@ -1229,11 +1506,11 @@ public abstract class L2Char extends L2Object {
 
         <button class="btn btn-outline-success active">Success</button>
 
-        <button class="btn btn-outline-danger active">Danger</button>
+        <button class="btn btn-outline-info active">Info</button>
 
         <button class="btn btn-outline-warning active">Warning</button>
 
-        <button class="btn btn-outline-info active">Info</button>
+        <button class="btn btn-outline-danger active">Danger</button>
 
         <button class="btn btn-outline-light active">Light</button>
 
@@ -1250,11 +1527,11 @@ public abstract class L2Char extends L2Object {
 
         <button class="btn btn-outline-success" disabled>Success</button>
 
-        <button class="btn btn-outline-danger" disabled>Danger</button>
+        <button class="btn btn-outline-info" disabled>Info</button>
 
         <button class="btn btn-outline-warning" disabled>Warning</button>
 
-        <button class="btn btn-outline-info" disabled>Info</button>
+        <button class="btn btn-outline-danger" disabled>Danger</button>
 
         <button class="btn btn-outline-light" disabled>Light</button>
 
@@ -1265,7 +1542,7 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Sizes</h3>
+    <h3>Sizes</h3>
     <div class="my-1">
       <button type="button" class="btn btn-primary btn-lg">Large button</button>
       <button type="button" class="btn btn-primary">Normal button</button>
@@ -1273,7 +1550,7 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Groups and dropdown</h3>
+    <h3>Groups and dropdown</h3>
     <div class="btn-toolbar my-1" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group me-2" role="group" aria-label="First group">
         <button type="button" class="btn btn-secondary">1</button>
@@ -1327,7 +1604,7 @@ public abstract class L2Char extends L2Object {
   </div>
 
   <div class="col-12">
-    <h3 class="mt-5">Pagination</h3>
+    <h3>Pagination</h3>
     <nav aria-label="Pagination example">
       <div class="container">
         <ul class="pagination">
@@ -1352,27 +1629,81 @@ public abstract class L2Char extends L2Object {
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="jumbotrons">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="offcanvas">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
+          <h1>
+            <i class="fa fa-arrow-right me-1"></i>
+            Offcanvas
+          </h1>
           <h2>
-            <span class="fa fa-bookmark me-1"></span>
-            Jumbotrons
-          </h2>
-          <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/jumbotron/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Jumbotron docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/offcanvas/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Offcanvas docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
+  <div class="col-12">
+    <p class="lead mb-5">
+    Offcanvas is a sidebar component that can be toggled via JavaScript
+    to appear from the left, right, top, or bottom edge of the viewport.
+    Buttons or anchors are used as triggers that are attached
+    to specific elements you toggle, and <code>data</code> attributes
+    are used to invoke our JavaScript.
+    </p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+<div class="mb-2"></div>
+<section id="jumbotrons">
+  <div class="bg-light text-bg-light p-3 mb-2">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+          <h1>
+            <i class="fa fa-bookmark me-1"></i>
+            Jumbotrons
+          </h1>
+          <h2>
+              <a
+                href="https://getbootstrap.com/docs/5.3/examples/jumbotron/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Jumbotron docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+          </h2>
+      </div>
+    </div>
+  </div>
+  <div class="container"><div class="row px-5">
   <div class="col-12">
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
       <div class="container-fluid py-5">
@@ -1381,11 +1712,10 @@ public abstract class L2Char extends L2Object {
         <button class="btn btn-primary btn-lg" type="button">Example button</button>
       </div>
     </div>
-
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
         <div class="h-100 p-5 text-bg-dark rounded-3">
-          <h2>Change the background</h2>
+          <h2 class="text-bg-dark">Change the background</h2>
           <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
           <button class="btn btn-outline-light" type="button">Example button</button>
         </div>
@@ -1402,29 +1732,34 @@ public abstract class L2Char extends L2Object {
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="cards">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="cards">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-square-o me-1"></span>
+          <h1>
+            <i class="fa fa-square-o me-1"></i>
             Cards
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/card/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Card docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/card/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Card docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Various types of cards</h3>
+    <h3>Various types of cards</h3>
     <div class="card-columns">
       <div class="card">
         <div class="card-body">
@@ -1441,7 +1776,7 @@ public abstract class L2Char extends L2Object {
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Card title</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
@@ -1451,7 +1786,7 @@ public abstract class L2Char extends L2Object {
         <blockquote class="blockquote mb-0 card-body">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <footer class="blockquote-footer">
-            <small class="text-muted">
+            <small class="text-body-secondary">
               Someone famous in <cite title="Source Title">Source Title</cite>
             </small>
           </footer>
@@ -1476,7 +1811,7 @@ public abstract class L2Char extends L2Object {
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-        <div class="card-footer text-muted">
+        <div class="card-footer text-body-secondary">
           2 days ago
         </div>
       </div>
@@ -1494,7 +1829,7 @@ public abstract class L2Char extends L2Object {
           <h4 class="card-title">Card title</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little
             bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
         </div>
         <img class="card-img-bottom" data-src="holder.js/100px120" alt="Card image cap">
       </div>
@@ -1559,256 +1894,221 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Colored cards</h3>
+    <h3>Colored cards</h3>
   </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card  bg-primary mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Primary card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Primary card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card  bg-secondary mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Secondary card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-secondary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Secondary card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card  bg-success mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Success card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-success mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Success card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card  bg-danger mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Danger card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-info mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Info card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Warning card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-warning mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Warning card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card  bg-info mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Info card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-danger mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Danger card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card text-white bg-light mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Light card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-light mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Light card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card  bg-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Dark card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card text-bg-dark mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Dark card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
-
-
-
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card  bg-white mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">White card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
+  </div>
 
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Cards with colored borders</h3>
+    <h3>Cards with colored borders</h3>
   </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-primary mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Primary card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Primary card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-secondary mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Secondary card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-secondary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Secondary card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-success mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Success card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-success mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Success card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-danger mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Danger card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-info mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Info card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-warning mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Warning card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-warning mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Warning card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-info mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Info card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-danger mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Danger card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-light mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Light card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-light mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Light card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Dark card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+  <div class="col-sm-6 col-md-4 col-xl-3">
+    <div class="card border-dark mb-3" style="max-width: 20rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Dark card</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
-
-    <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="card border-white mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">White card</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
+  </div>
 
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="forms">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="forms">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-pencil me-1"></span>
+          <h1>
+            <i class="fa fa-pencil me-1"></i>
             Forms
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Form docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/input-group/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Input group docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/forms/overview/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Form docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/forms/input-group/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Input group docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<form>
+  <div class="container"><form>
   <div class="row px-5">
     <div class="col-md-6">
-      <h3 class="mt-5">Text fields</h3>
+      <h3>Text fields</h3>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <small id="emailHelp" class="form-text text-body-secondary">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
         <input type="password" class="form-control" placeholder="Password">
@@ -1893,7 +2193,7 @@ public abstract class L2Char extends L2Object {
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
-      <h3 class="mt-5">Layouts</h3>
+      <h3>Layouts</h3>
       <div class="form-group">
         <div class="row">
           <div class="col">
@@ -1936,13 +2236,13 @@ public abstract class L2Char extends L2Object {
           <div class="form-group">
             <label for="inputPassword6">Password</label>
             <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
-            <small id="passwordHelpInline" class="text-muted">Must be 8-20 characters long.</small>
+            <small id="passwordHelpInline" class="text-body-secondary">Must be 8-20 characters long.</small>
           </div>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <h3 class="mt-5">Selects</h3>
+      <h3>Selects</h3>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Example select</label>
         <select class="form-control" id="exampleFormControlSelect1">
@@ -1987,7 +2287,7 @@ public abstract class L2Char extends L2Object {
         </select>
       </div>
 
-      <h3 class="mt-5">Checkboxes</h3>
+      <h3>Checkboxes</h3>
       <div class="form-check">
         <label class="form-check-label">
           <input class="form-check-input" type="checkbox" value="">
@@ -2036,7 +2336,7 @@ public abstract class L2Char extends L2Object {
         </label>
       </div>
 
-      <h3 class="mt-5">Radio buttons</h3>
+      <h3>Radio buttons</h3>
       <div class="form-check">
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -2095,80 +2395,139 @@ public abstract class L2Char extends L2Object {
 </form>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="navs">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="navs">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-bars me-1"></span>
+          <h1>
+            <i class="fa fa-bars me-1"></i>
             Navs
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/navbar/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Navbar docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/navs/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Navs' docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/breadcrumb/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Breadcrumb docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/dropdowns/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Dropdown docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/scrollspy/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Scrollspy docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/utilities/position/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Position docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/navbar/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Navbar docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/navs-tabs/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Navs and tabs docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/breadcrumb/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Breadcrumb docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/dropdowns/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Dropdown docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/scrollspy/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Scrollspy docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/utilities/position/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Position docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
   <div class="container">
-
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Navbars</h3>
+    <h3>Navbars</h3>
 
 
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-primary"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-light mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-primary"
+            aria-controls="navbar-primary"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-primary">
+          <div id="navbar-primary" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
@@ -2176,36 +2535,55 @@ public abstract class L2Char extends L2Object {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-secondary"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-light mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-secondary"
+            aria-controls="navbar-secondary"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-secondary">
+          <div id="navbar-secondary" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
@@ -2213,36 +2591,55 @@ public abstract class L2Char extends L2Object {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-success my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-success"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success text-light mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-success"
+            aria-controls="navbar-success"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-success">
+          <div id="navbar-success" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
@@ -2250,36 +2647,55 @@ public abstract class L2Char extends L2Object {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-danger my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-danger"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info text-dark mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-info"
+            aria-controls="navbar-info"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-danger">
+          <div id="navbar-info" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
@@ -2287,36 +2703,55 @@ public abstract class L2Char extends L2Object {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-warning my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-warning"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning text-dark mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-warning"
+            aria-controls="navbar-warning"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-warning">
+          <div id="navbar-warning" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
@@ -2324,36 +2759,55 @@ public abstract class L2Char extends L2Object {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-info my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-info"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger text-light mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-danger"
+            aria-controls="navbar-danger"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-info">
+          <div id="navbar-danger" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
@@ -2361,36 +2815,55 @@ public abstract class L2Char extends L2Object {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-light"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-light"
+            aria-controls="navbar-light"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-light">
+          <div id="navbar-light" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
@@ -2398,135 +2871,153 @@ public abstract class L2Char extends L2Object {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-dark"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navs">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-dark"
+            aria-controls="navbar-dark"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-dark">
+          <div id="navbar-dark" class="collapse navbar-collapse">
 
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+            <span class="navbar-text">Text</span>
           </div>
-        </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-white my-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">Brand</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar-white"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-white">
-
-<div class="nav navbar-nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
-            <span class="navbar-text ms-2 me-auto">Text</span>
-            <form class="form-inline">
-              <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
       </nav>
 
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Tabs</h3>
+    <h3 class="mt-2">Tabs</h3>
 
-<div class="nav nav-tabs">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
 
-    <h3 class="mt-5">Pills</h3>
+    <h3 class="mt-2">Pills</h3>
 
-<div class="nav nav-pills">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Vertical pills</h3>
+    <h3 class="mt-2">Vertical pills</h3>
 
-<div class="nav nav-pills flex-column">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</div>
+<ul class="nav nav-pills flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
   </div>
   <div class="col-12">
-    <h3 class="mt-5">Breadcrumbs</h3>
+    <h3 class="mt-2">Breadcrumbs</h3>
     <div class="breadcrumb">
       <a class="breadcrumb-item" href="#">Home</a>
       <a class="breadcrumb-item" href="#">Library</a>
@@ -2537,132 +3028,136 @@ public abstract class L2Char extends L2Object {
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="badges">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="badges">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-tag me-1"></span>
+          <h1>
+            <i class="fa fa-tag me-1"></i>
             Badges
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/badge/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Badge docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/badge/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Badge docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Contextual badges</h3>
+    <h3>Contextual badges</h3>
     <p>
 
-        <span class="badge badge-primary">Primary</span>
+        <span class="badge text-bg-primary mb-1">Primary</span>
 
-        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge text-bg-secondary mb-1">Secondary</span>
 
-        <span class="badge badge-success">Success</span>
+        <span class="badge text-bg-success mb-1">Success</span>
 
-        <span class="badge badge-danger">Danger</span>
+        <span class="badge text-bg-info mb-1">Info</span>
 
-        <span class="badge badge-warning">Warning</span>
+        <span class="badge text-bg-warning mb-1">Warning</span>
 
-        <span class="badge badge-info">Info</span>
+        <span class="badge text-bg-danger mb-1">Danger</span>
 
-        <span class="badge badge-light">Light</span>
+        <span class="badge text-bg-light mb-1">Light</span>
 
-        <span class="badge badge-dark">Dark</span>
-
-        <span class="badge badge-white">White</span>
+        <span class="badge text-bg-dark mb-1">Dark</span>
 
     </p>
 
-    <h3 class="mt-5">Pill badges</h3>
+    <h3>Pill badges</h3>
     <p>
 
-        <span class="badge badge-pill badge-primary">Primary</span>
+        <span class="badge text-bg-primary rounded-pill mb-1">Primary</span>
 
-        <span class="badge badge-pill badge-secondary">Secondary</span>
+        <span class="badge text-bg-secondary rounded-pill mb-1">Secondary</span>
 
-        <span class="badge badge-pill badge-success">Success</span>
+        <span class="badge text-bg-success rounded-pill mb-1">Success</span>
 
-        <span class="badge badge-pill badge-danger">Danger</span>
+        <span class="badge text-bg-info rounded-pill mb-1">Info</span>
 
-        <span class="badge badge-pill badge-warning">Warning</span>
+        <span class="badge text-bg-warning rounded-pill mb-1">Warning</span>
 
-        <span class="badge badge-pill badge-info">Info</span>
+        <span class="badge text-bg-danger rounded-pill mb-1">Danger</span>
 
-        <span class="badge badge-pill badge-light">Light</span>
+        <span class="badge text-bg-light rounded-pill mb-1">Light</span>
 
-        <span class="badge badge-pill badge-dark">Dark</span>
-
-        <span class="badge badge-pill badge-white">White</span>
+        <span class="badge text-bg-dark rounded-pill mb-1">Dark</span>
 
     </p>
 
-    <h3 class="mt-5">Links</h3>
+    <h3>Links</h3>
     <p>
 
-        <a href="#" class="badge badge-primary">Primary</a>
+        <a href="#badges" class="badge text-bg-primary mb-1">Primary</a>
 
-        <a href="#" class="badge badge-secondary">Secondary</a>
+        <a href="#badges" class="badge text-bg-secondary mb-1">Secondary</a>
 
-        <a href="#" class="badge badge-success">Success</a>
+        <a href="#badges" class="badge text-bg-success mb-1">Success</a>
 
-        <a href="#" class="badge badge-danger">Danger</a>
+        <a href="#badges" class="badge text-bg-info mb-1">Info</a>
 
-        <a href="#" class="badge badge-warning">Warning</a>
+        <a href="#badges" class="badge text-bg-warning mb-1">Warning</a>
 
-        <a href="#" class="badge badge-info">Info</a>
+        <a href="#badges" class="badge text-bg-danger mb-1">Danger</a>
 
-        <a href="#" class="badge badge-light">Light</a>
+        <a href="#badges" class="badge text-bg-light mb-1">Light</a>
 
-        <a href="#" class="badge badge-dark">Dark</a>
-
-        <a href="#" class="badge badge-white">White</a>
+        <a href="#badges" class="badge text-bg-dark mb-1">Dark</a>
 
     </p>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Badges in headings</h3>
-    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
-    <h2>Example heading <span class="badge badge-secondary">New</span></h2>
-    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
-    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
-    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+    <h3>Badges in headings</h3>
+    <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+    <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
   </div>
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="alerts">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="alerts">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-exclamation-triangle me-1"></span>
+          <h1>
+            <i class="fa fa-exclamation-triangle me-1"></i>
             Alerts
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/alerts/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Alert docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/alerts/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Alert docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Simple alerts</h3>
+    <h3>Simple alerts</h3>
   </div>
 
     <div class="col-md-4">
@@ -2684,8 +3179,8 @@ public abstract class L2Char extends L2Object {
     </div>
 
     <div class="col-md-4">
-      <div class="alert alert-danger" role="alert">
-        .alert-danger
+      <div class="alert alert-info" role="alert">
+        .alert-info
       </div>
     </div>
 
@@ -2696,8 +3191,8 @@ public abstract class L2Char extends L2Object {
     </div>
 
     <div class="col-md-4">
-      <div class="alert alert-info" role="alert">
-        .alert-info
+      <div class="alert alert-danger" role="alert">
+        .alert-danger
       </div>
     </div>
 
@@ -2713,16 +3208,10 @@ public abstract class L2Char extends L2Object {
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="alert alert-white" role="alert">
-        .alert-white
-      </div>
-    </div>
-
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3 class="mt-5">Alerts with additional content</h3>
+    <h3>Alerts with additional content</h3>
   </div>
 
     <div class="col-md-4">
@@ -2756,7 +3245,7 @@ public abstract class L2Char extends L2Object {
     </div>
 
     <div class="col-md-4">
-      <div class="alert alert-danger" role="alert">
+      <div class="alert alert-info" role="alert">
         <h4 class="alert-heading">Well done!</h4>
         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that
           you can see how spacing within an alert works with this kind of content. Also here is an <a href="javascript:void(0)" class="alert-link">example alert link</a>.</p>
@@ -2776,7 +3265,7 @@ public abstract class L2Char extends L2Object {
     </div>
 
     <div class="col-md-4">
-      <div class="alert alert-info" role="alert">
+      <div class="alert alert-danger" role="alert">
         <h4 class="alert-heading">Well done!</h4>
         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that
           you can see how spacing within an alert works with this kind of content. Also here is an <a href="javascript:void(0)" class="alert-link">example alert link</a>.</p>
@@ -2805,51 +3294,53 @@ public abstract class L2Char extends L2Object {
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="alert alert-white" role="alert">
-        <h4 class="alert-heading">Well done!</h4>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that
-          you can see how spacing within an alert works with this kind of content. Also here is an <a href="javascript:void(0)" class="alert-link">example alert link</a>.</p>
-        <hr>
-        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-      </div>
-    </div>
-
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="popovers">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="popovers">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-info-circle me-1"></span>
+          <h1>
+            <i class="fa fa-info-circle me-1"></i>
             Popovers
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/popovers/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Popover docs"><span class="fa fa-book fw"></span></a>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/tooltips/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Tooltip docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/popovers/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Popover docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/tooltips/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Tooltip docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Popovers</h3>
+    <h3>Popovers</h3>
     <button type="button" class="btn btn-primary my-5" data-bs-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?" id="popover-toggler">
       Toggle popover
     </button>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Tooltips</h3>
+    <h3>Tooltips</h3>
     <button type="button" class="btn btn-primary my-5" data-bs-toggle="tooltip" data-placement="right" title="Tooltip on right">
       Tooltip on right
     </button>
@@ -2857,29 +3348,34 @@ public abstract class L2Char extends L2Object {
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="progress-bars">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="progress-bars">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-spinner me-1"></span>
+          <h1>
+            <i class="fa fa-spinner me-1"></i>
             Progress bars
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/progress/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Progress docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/progress/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Progress docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
-  <div class="container">
-<div class="row px-5">
+  <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3 class="mt-5">Colored progress bars</h3>
+    <h3>Colored progress bars</h3>
     <div class="progress my-1">
       <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
     </div>
@@ -2904,7 +3400,7 @@ public abstract class L2Char extends L2Object {
 
   </div>
   <div class="col-md-6">
-    <h3 class="mt-5">Striped progress bars</h3>
+    <h3>Striped progress bars</h3>
     <div class="progress my-1">
       <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
     </div>
@@ -2929,43 +3425,80 @@ public abstract class L2Char extends L2Object {
 </div>
   </div>
 </section>
-
-<section class="mb-5 pt-5" id="modals">
-  <div class="bg-light py-4 mb-5">
+<div class="mb-2"></div>
+<section id="modals">
+  <div class="bg-light text-bg-light p-3 mb-2">
     <div class="container">
       <div class="d-flex justify-content-between">
-          <h2>
-            <span class="fa fa-window-restore me-1"></span>
+          <h1>
+            <i class="fa fa-window-restore me-1"></i>
             Modals
-          </h2>
+          </h1>
           <h2>
-
-              <a href="https://getbootstrap.com/docs/4.1/components/modal/" target="_blank"
-              data-bs-toggle="tooltip" data-placement="bottom" title="Modal docs"><span class="fa fa-book fw"></span></a>
-
-            <a href="#top" class="ms-3"><span class="fa fa-chevron-up fw"></span></a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/components/modal/"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                data-placement="bottom"
+                title="Modal docs"
+                style="text-decoration: none"
+              >
+                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+              </a>
+            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
       </div>
     </div>
   </div>
   <div class="container">
 <div class="row px-5">
-  <div class="col-12">
-    <div class="modal">
-      <div class="modal-dialog" role="document">
+  <div class="col-md-6">
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModalPopovers"
+    >Launch demo modal
+    </button>
+    <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-              </button>
+            <h1 class="modal-title fs-5" id="exampleModalPopoversLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>Modal body text goes here.</p>
+            <h2 class="fs-5">Popover in a modal</h2>
+            <p>This <button class="btn btn-secondary" data-bs-toggle="popover" data-bs-content="Popover body content is set in this attribute." data-bs-container="#exampleModalPopovers" data-bs-original-title="Popover title">button</button> triggers a popover on click.</p>
+            <hr>
+            <h2 class="fs-5">Tooltips in a modal</h2>
+            <p><a href="#modals" data-bs-toggle="tooltip" data-bs-container="#exampleModalPopovers" data-bs-original-title="Tooltip">This link</a> and <a href="#modals" data-bs-toggle="tooltip" data-bs-container="#exampleModalPopovers" data-bs-original-title="Tooltip">that link</a> have tooltips on hover.</p>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Launch static backdrop modal
+    </button>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          I will not close if you click outside of me. Don't even try to press escape key.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
           </div>
         </div>
       </div>
@@ -2974,9 +3507,8 @@ public abstract class L2Char extends L2Object {
 </div>
   </div>
 </section>
-
-</div>
-        </div>
+<div class="mb-2"></div>
+</div></div>
             </div>
         </div>
 
@@ -2985,33 +3517,16 @@ public abstract class L2Char extends L2Object {
                 <p>Bootstrap 5 test page by <a href="https://juzraai.github.io/">juzraai</a></p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" defer integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" defer integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" integrity="sha512-bgHRAiTjGrzHzLyKOnpFvaEpGzJet3z4tZnXGjpsCcqOnAH6VGUx9frc5bcIhKTVLEiCO6vEhNAgx5jtLUYrfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js" integrity="sha512-uaZ0UXmB7NHxAxQawA8Ow2wWjdsedpRu7nJRSoI2mjnwtY8V5YiCWavoIpo1AhWPMLiW5iEeavmA3JJ2+1idUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/js/bootstrap.min.js" integrity="sha512-wOLiP6uL5tNrV1FiutKtAyQGGJ1CWAsqQ6Kp2XZ12/CvZxw8MvNJfdhh0yTwjPIir4SWag2/MHrseR7PRmNtvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js" integrity="sha512-O6R6IBONpEcZVYJAmSC+20vdsM07uFuGjFf0n/Zthm8sOFW+lAq/OK1WOL8vk93GBDxtMIy6ocbj6lduyeLuqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js" integrity="sha512-zPB79j2C+3sFS9zcA3vg/z6bVKzJVEyu9pY5w89akQRys76zpAT2t6S3wZKla3QQ14O5l/Yt0RUQ/DHXx82Y5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/override.js" defer></script>
         <script src="search/main.js" defer></script>
         <script src="js/base.js" defer></script>
-        <script>
-          $(function () {
-            $('[data-toggle="popover"]').popover();
-            $('[data-toggle="tooltip"]').tooltip();
-
-            $('#hljs-theme-toggler').click(function () {
-              var m = $('#hljs-theme').attr('media');
-              m = ('none' == m) ? '' : 'none';
-              $('#hljs-theme').attr('media', m);
-            });
-
-            $('#popover-toggler').click();
-          });
-          hljs.highlightAll();
-        </script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -3079,5 +3594,5 @@ public abstract class L2Char extends L2Object {
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-04-26 19:33:40.170061+00:00
+Build Date UTC : 2023-04-27 22:51:51.379740+00:00
 -->
