@@ -3,7 +3,6 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  */
-
 (() => {
   'use strict'
 
@@ -25,14 +24,30 @@
     }
   }
 
+  const swapHljsStyle = function (theme) {
+    const lightSheet = document.getElementById('hljs_light');
+    const darkSheet  = document.getElementById('hljs_dark');
+    if ((theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      || theme === 'dark') {
+      darkSheet.removeAttribute("disabled");
+      lightSheet.setAttribute("disabled", "disabled");
+    } else {
+      lightSheet.removeAttribute("disabled");
+      darkSheet.setAttribute("disabled", "disabled");
+    }
+  }
+
   setTheme(getPreferredTheme())
 
   const showActiveTheme = (theme, focus = false) => {
+
     const themeSwitcher = document.querySelector('#bd-theme')
 
     if (!themeSwitcher) {
       return
     }
+
+    swapHljsStyle(theme);
 
     const themeSwitcherText = document.querySelector('#bd-theme-text')
     const activeThemeIcon = document.querySelector('.theme-icon-active use')

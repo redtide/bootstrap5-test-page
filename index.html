@@ -1,64 +1,268 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Sample page for Bootstrap 5 components. Try out the default theme or your custom stylesheet.">
-        <meta name="author" content="Zsolt Jurányi">
-        <link rel="canonical" href="https://juzraai.github.io/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Bootstrap 5 test page</title>
-        <script src="js/color-modes.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.min.css" integrity="sha512-iGjGmwIm1UHNaSuwiNFfB3+HpzT/YLJMiYPKzlQEVpT6FWi5rfpbyrBuTPseScOCWBkRtsrRIbrTzJpQ02IaLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="css/base.css" rel="stylesheet">
-        <link href="css/override.css" rel="stylesheet">
-        <link href="css/docs.css" rel="stylesheet"> 
-    </head>
+<html
+  id="top"
+  lang="en"
+  data-bs-theme="auto"
+>
+  <head>    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample page for Bootstrap 5 components. Try out the default theme or your custom stylesheet.">
+    <meta name="author" content="redtide">
+    <link rel="canonical" href="https://redtide.github.io/bootstrap5-test-page/">
+    <link rel="shortcut icon" href=".">
+    <title>Bootstrap 5 test page</title>
+    <script src="js/color-modes.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.min.css" integrity="sha512-iGjGmwIm1UHNaSuwiNFfB3+HpzT/YLJMiYPKzlQEVpT6FWi5rfpbyrBuTPseScOCWBkRtsrRIbrTzJpQ02IaLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css" disabled="disabled" id="hljs_light">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css" disabled="disabled" id="hljs_dark">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/docs.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#test-navbar" data-offset="100"><div markdown="0">
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href=".">Bootstrap 5 test page</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<nav
+  class="navbar sticky-top navbar-expand-md
+    bg-dark
+    text-bg-dark"
+  data-bs-theme="dark">
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#test-navbar"
+      aria-controls="test-navbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="test-navbar" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#typography"
+                      data-bs-placement="bottom"
+                      data-bs-title="Typography"
+                      data-bs-toggle="tooltip"
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="info/" class="nav-link">Info</a>
-                            </li>
-                        </ul>
+                    >
+                      <span class="fa fa-paragraph mx-2"></span>
+                      <span class="d-md-none">Typography</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#images"
+                      data-bs-placement="bottom"
+                      data-bs-title="Images"
+                      data-bs-toggle="tooltip"
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="info/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/redtide/bootstrap5-test-page/edit/mkdocs/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
-                            </li>
-                      
+                    >
+                      <span class="fa fa-picture-o mx-2"></span>
+                      <span class="d-md-none">Images</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#tables"
+                      data-bs-placement="bottom"
+                      data-bs-title="Tables"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-table mx-2"></span>
+                      <span class="d-md-none">Tables</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#list-groups"
+                      data-bs-placement="bottom"
+                      data-bs-title="List groups"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-list-ul mx-2"></span>
+                      <span class="d-md-none">List groups</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#buttons"
+                      data-bs-placement="bottom"
+                      data-bs-title="Buttons"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-square mx-2"></span>
+                      <span class="d-md-none">Buttons</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#offcanvas"
+                      data-bs-placement="bottom"
+                      data-bs-title="Offcanvas"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-arrow-right mx-2"></span>
+                      <span class="d-md-none">Offcanvas</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#jumbotrons"
+                      data-bs-placement="bottom"
+                      data-bs-title="Jumbotrons"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-bookmark mx-2"></span>
+                      <span class="d-md-none">Jumbotrons</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#cards"
+                      data-bs-placement="bottom"
+                      data-bs-title="Cards"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-square-o mx-2"></span>
+                      <span class="d-md-none">Cards</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#forms"
+                      data-bs-placement="bottom"
+                      data-bs-title="Forms"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-pencil mx-2"></span>
+                      <span class="d-md-none">Forms</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#navs"
+                      data-bs-placement="bottom"
+                      data-bs-title="Navs"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-bars mx-2"></span>
+                      <span class="d-md-none">Navs</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#badges"
+                      data-bs-placement="bottom"
+                      data-bs-title="Badges"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-tag mx-2"></span>
+                      <span class="d-md-none">Badges</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#alerts"
+                      data-bs-placement="bottom"
+                      data-bs-title="Alerts"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-exclamation-triangle mx-2"></span>
+                      <span class="d-md-none">Alerts</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#popovers"
+                      data-bs-placement="bottom"
+                      data-bs-title="Popovers"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-info-circle mx-2"></span>
+                      <span class="d-md-none">Popovers</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#progress-bars"
+                      data-bs-placement="bottom"
+                      data-bs-title="Progress bars"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-spinner mx-2"></span>
+                      <span class="d-md-none">Progress bars</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#modals"
+                      data-bs-placement="bottom"
+                      data-bs-title="Modals"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-window-restore mx-2"></span>
+                      <span class="d-md-none">Modals</span>
+                    </a>
+                  </li>
+      </ul>
+      <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://getbootstrap.com/docs/5.3/"
+                      data-bs-placement="bottom"
+                      data-bs-title="Bootstrap documentation"
+                      data-bs-toggle="tooltip"
+                      target="_blank"
+                    >
+                      <span class="fa fa-book mx-2"></span>
+                      <span class="d-md-none">Bootstrap documentation</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/redtide/bootstrap5-test-page"
+                      data-bs-placement="bottom"
+                      data-bs-title="Source code"
+                      data-bs-toggle="tooltip"
+
+                    >
+                      <span class="fa fa-github mx-2"></span>
+                      <span class="d-md-none">Source code</span>
+                    </a>
+                  </li>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="sun-fill" viewBox="0 0 16 16">
     <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
@@ -74,7 +278,6 @@
     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
   </symbol>
 </svg>
-                      
           <li class="vr"></li>
           <li class="nav-item dropdown">
             <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
@@ -111,380 +314,67 @@
               </li>
             </ul>
           </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    
-                    
-                    <div role="main">
-
-<style>
-  body > .container {
-    margin-top: 63px;
-  }
-</style>
-<div markdown="0">
-
-
-
-<div class="container-flex">
-  <div class="
-    navbar
-    navbar-expand-md
-    navbar-dark
-    bg-dark
-    text-light
-">
-    <div class="container">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-target="#my-navbar"
-        aria-controls="my-navbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="my-navbar">
-        <ul class="navbar-nav me-auto">
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#typography"
-                      title="Typography"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-paragraph mx-2"></span>
-                      <span class="d-md-none">Typography</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#images"
-                      title="Images"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-picture-o mx-2"></span>
-                      <span class="d-md-none">Images</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#tables"
-                      title="Tables"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-table mx-2"></span>
-                      <span class="d-md-none">Tables</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#list-groups"
-                      title="List groups"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-list-ul mx-2"></span>
-                      <span class="d-md-none">List groups</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#buttons"
-                      title="Buttons"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-square mx-2"></span>
-                      <span class="d-md-none">Buttons</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#offcanvas"
-                      title="Offcanvas"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-arrow-right mx-2"></span>
-                      <span class="d-md-none">Offcanvas</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#jumbotrons"
-                      title="Jumbotrons"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-bookmark mx-2"></span>
-                      <span class="d-md-none">Jumbotrons</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#cards"
-                      title="Cards"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-square-o mx-2"></span>
-                      <span class="d-md-none">Cards</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#forms"
-                      title="Forms"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-pencil mx-2"></span>
-                      <span class="d-md-none">Forms</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#navs"
-                      title="Navs"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-bars mx-2"></span>
-                      <span class="d-md-none">Navs</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#badges"
-                      title="Badges"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-tag mx-2"></span>
-                      <span class="d-md-none">Badges</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#alerts"
-                      title="Alerts"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-exclamation-triangle mx-2"></span>
-                      <span class="d-md-none">Alerts</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#popovers"
-                      title="Popovers"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-info-circle mx-2"></span>
-                      <span class="d-md-none">Popovers</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#progress-bars"
-                      title="Progress bars"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-spinner mx-2"></span>
-                      <span class="d-md-none">Progress bars</span>
-                    </a>
-                  </li>
-
-
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="#modals"
-                      title="Modals"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-window-restore mx-2"></span>
-                      <span class="d-md-none">Modals</span>
-                    </a>
-                  </li>
-
-        </ul>
-        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="https://getbootstrap.com/docs/5.3/"
-                      title="Bootstrap documentation"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-                      target="_blank"
-                    >
-                      <span class="fa fa-book mx-2"></span>
-                      <span class="d-md-none">Bootstrap documentation</span>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="https://github.com/juzraai/bootstrap4-test-page"
-                      title="Source code"
-                      data-bs-toggle="tooltip"
-                      data-placement="bottom"
-
-                    >
-                      <span class="fa fa-github mx-2"></span>
-                      <span class="d-md-none">Source code</span>
-                    </a>
-                  </li>
-        </ul>
-      </div>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<section id="typography">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+<main>
+  <section id="typography mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-paragraph me-1"></i>
             Typography
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/content/typography/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Typography docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/content/reboot/#inline-code"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Code docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/utilities/colors/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Color utility docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/utilities/text/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Text utility docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/content/typography/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Typography docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/content/reboot/#inline-code"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Code docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/utilities/colors/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Color utility docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/utilities/text/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Text utility docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-md-6">
     <h3>Headings</h3>
     <h1>h1. Bootstrap heading</h1>
@@ -697,19 +587,15 @@ public abstract class L2Char extends L2Object {
 <dl class="row">
   <dt class="col-sm-3">Description lists</dt>
   <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
-
   <dt class="col-sm-3">Term</dt>
   <dd class="col-sm-9">
     <p>Definition for the term.</p>
     <p>And some more placeholder definition text.</p>
   </dd>
-
   <dt class="col-sm-3">Another term</dt>
   <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
-
   <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
   <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
-
   <dt class="col-sm-3">Nesting</dt>
   <dd class="col-sm-9">
     <dl class="row">
@@ -724,88 +610,87 @@ public abstract class L2Char extends L2Object {
     <h3>Background colors</h3>
   </div>
 
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-primary">.text-bg-primary</div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-secondary">.text-bg-secondary</div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-success">.text-bg-success</div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-info">.text-bg-info</div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-warning">.text-bg-warning</div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-danger">.text-bg-danger</div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-light">.text-bg-light</div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 mb-2 text-bg-dark">.text-bg-dark</div>
-      </div>
-
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-primary">.text-bg-primary</div>
   </div>
+
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-secondary">.text-bg-secondary</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-success">.text-bg-success</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-info">.text-bg-info</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-warning">.text-bg-warning</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-danger">.text-bg-danger</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-light">.text-bg-light</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="p-3 mb-2 text-bg-dark">.text-bg-dark</div>
+  </div>
+
+  <div class="mb-2"></div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="images">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="images mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-picture-o me-1"></i>
             Images
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/content/images/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Image docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/content/figures/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Figure docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/utilities/flex/#media-object"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Media object docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/content/images/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Image docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/content/figures/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Figure docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/utilities/flex/#media-object"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Media object docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-12">
     <h3>Responsive image</h3>
     <img data-src="holder.js/100px250" alt="responsive image" class="img-fluid">
@@ -824,10 +709,10 @@ public abstract class L2Char extends L2Object {
   <div class="col-12">
     <h3>Media</h3>
     <p>
-    In v5 the <code>.media</code> component was dropped as it can be
-    easily replicated with utilities.
-    See <a href="https://github.com/twbs/bootstrap/pull/28265">#28265</a> and the
-    <a href="https://getbootstrap.com/docs/5.3/utilities/flex/#media-object">flex utilities page</a> for an example.
+      In v5 the <code>.media</code> component was dropped as it can be
+      easily replicated with utilities.
+      See <a href="https://github.com/twbs/bootstrap/pull/28265">#28265</a> and the
+      <a href="https://getbootstrap.com/docs/5.3/utilities/flex/#media-object">flex utilities page</a> for an example.
     </p>
     <div class="d-flex me-3">
       <div class="flex-shrink-0">
@@ -852,34 +737,34 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
 </div>
-  </div>
-</section>
 <div class="mb-2"></div>
-<section id="tables">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="tables mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-table me-1"></i>
             Tables
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/content/tables/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Table docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/content/tables/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Table docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
+    <div class="container">
 <div class="row px-5">
   <div class="col-md-6">
     <h3>Table</h3>
@@ -1237,34 +1122,33 @@ public abstract class L2Char extends L2Object {
 </table>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="list-groups">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="list-groups mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-list-ul me-1"></i>
             List groups
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/list-group/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="List group docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/list-group/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="List group docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-12">
 
   </div>
@@ -1348,64 +1232,64 @@ public abstract class L2Char extends L2Object {
     </ul>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="buttons">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+<div class="mb-3"></div>
+    </div>
+  </section>
+  <section id="buttons mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-square me-1"></i>
             Buttons
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/buttons/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Button docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/button-group/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Button group docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/pagination/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Pagination docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/dropdowns/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Dropdown docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/buttons/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Button docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/button-group/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Button group docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/pagination/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Pagination docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/dropdowns/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Dropdown docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
+    <div class="container">
 <div class="row px-5">
   <div class="col-12">
     <h3>General buttons</h3>
@@ -1591,7 +1475,7 @@ public abstract class L2Char extends L2Object {
         >
           <span class="visually-hidden">Toggle Dropdown</span>
         </button>
-        <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-menu dropdown-menu-end">
           <h6 class="dropdown-header">Dropdown header</h6>
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item disabled" href="#">Disabled link</a>
@@ -1627,36 +1511,35 @@ public abstract class L2Char extends L2Object {
     </nav>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="offcanvas">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="offcanvas mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-arrow-right me-1"></i>
             Offcanvas
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/offcanvas/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Offcanvas docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/offcanvas/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Offcanvas docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-12">
-    <p class="lead mb-5">
+    <p class="lead">
     Offcanvas is a sidebar component that can be toggled via JavaScript
     to appear from the left, right, top, or bottom edge of the viewport.
     Buttons or anchors are used as triggers that are attached
@@ -1676,36 +1559,36 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="jumbotrons">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+<div class="mb-3"></div>
+    </div>
+  </section>
+  <section id="jumbotrons mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-bookmark me-1"></i>
             Jumbotrons
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/examples/jumbotron/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Jumbotron docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/examples/jumbotron/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Jumbotron docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-12">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="p-5 mb-3 mt-1 bg-body-tertiary rounded-3">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">Custom jumbotron</h1>
         <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
@@ -1730,34 +1613,34 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="cards">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+<div class="mb-3"></div>
+    </div>
+  </section>
+  <section id="cards mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-square-o me-1"></i>
             Cards
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/card/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Card docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/card/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Card docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-12">
     <h3>Various types of cards</h3>
     <div class="card-columns">
@@ -1778,8 +1661,8 @@ public abstract class L2Char extends L2Object {
           <h4 class="card-title">Card title</h4>
           <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="#cards" class="card-link">Card link</a>
+          <a href="#cards" class="card-link">Another link</a>
         </div>
       </div>
       <div class="card p-3">
@@ -1799,7 +1682,7 @@ public abstract class L2Char extends L2Object {
         <div class="card-body">
           <h4 class="card-title">Special title treatment</h4>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#cards" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
       <div class="card text-center">
@@ -1809,7 +1692,7 @@ public abstract class L2Char extends L2Object {
         <div class="card-body">
           <h4 class="card-title">Special title treatment</h4>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#cards" class="btn btn-primary">Go somewhere</a>
         </div>
         <div class="card-footer text-body-secondary">
           2 days ago
@@ -1845,48 +1728,48 @@ public abstract class L2Char extends L2Object {
           <li class="list-group-item">Vestibulum at eros</li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="#cards" class="card-link">Card link</a>
+          <a href="#cards" class="card-link">Another link</a>
         </div>
       </div>
       <div class="card text-center">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
+              <a class="nav-link active" href="#cards">Active</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#cards">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link disabled" href="#cards">Disabled</a>
             </li>
           </ul>
         </div>
         <div class="card-body">
           <h4 class="card-title">Special title treatment</h4>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#cards" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
       <div class="card text-center">
         <div class="card-header">
           <ul class="nav nav-pills card-header-pills">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
+              <a class="nav-link active" href="#cards">Active</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#cards">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link disabled" href="#cards">Disabled</a>
             </li>
           </ul>
         </div>
         <div class="card-body">
           <h4 class="card-title">Special title treatment</h4>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#cards" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
@@ -2064,44 +1947,43 @@ public abstract class L2Char extends L2Object {
   </div>
 
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="forms">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="forms mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-pencil me-1"></i>
             Forms
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/forms/overview/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Form docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/forms/input-group/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Input group docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/forms/overview/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Form docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/forms/input-group/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Input group docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><form>
+    <div class="container"><form>
   <div class="row px-5">
     <div class="col-md-6">
       <h3>Text fields</h3>
@@ -2178,12 +2060,12 @@ public abstract class L2Char extends L2Object {
           <input type="text" class="form-control" aria-label="Text input with dropdown button">
           <div class="input-group-append">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="#forms">Action</a>
+              <a class="dropdown-item" href="#forms">Another action</a>
+              <a class="dropdown-item" href="#forms">Something else here</a>
               <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="#forms">Separated link</a>
             </div>
           </div>
         </div>
@@ -2393,163 +2275,107 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
 </form>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="navs">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+<div class="mb-3"></div>
+    </div>
+  </section>
+  <section id="navs mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-bars me-1"></i>
             Navs
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/navbar/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Navbar docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/navs-tabs/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Navs and tabs docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/breadcrumb/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Breadcrumb docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/dropdowns/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Dropdown docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/scrollspy/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Scrollspy docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/utilities/position/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Position docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/navbar/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Navbar docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/navs-tabs/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Navs and tabs docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/breadcrumb/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Breadcrumb docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/dropdowns/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Dropdown docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/scrollspy/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Scrollspy docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/utilities/position/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Position docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
+    <div class="container">
 <div class="row px-5">
   <div class="col-12">
     <h3>Navbars</h3>
 
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-light mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-primary"
-            aria-controls="navbar-primary"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbar-primary" class="collapse navbar-collapse">
-
-<ul class="navbar-nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#navs">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#navs">Link</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a
-      class="nav-link dropdown-toggle"
-      href="#navs"
-      role="button"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-    >Dropdown</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#navs">Action</a></li>
-      <li><a class="dropdown-item" href="#navs">Another action</a></li>
-      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
-      <li class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
-  </li>
-</ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-light mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-secondary"
-            aria-controls="navbar-secondary"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbar-secondary" class="collapse navbar-collapse">
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-primary
+    text-bg-primary"
+  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-primary"
+          aria-controls="navbar-primary"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-primary" class="collapse navbar-collapse">
 
 <ul class="navbar-nav">
   <li class="nav-item">
@@ -2578,34 +2404,48 @@ public abstract class L2Char extends L2Object {
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
+          <span class="navbar-text">Text</span>
         </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-success text-light mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-success"
-            aria-controls="navbar-success"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="light"
           >
-            <span class="navbar-toggler-icon"></span>
+          <button
+            class="btn btn-outline-light"
+            type="submit"
+            data-bs-theme="light"
+          >Search
           </button>
-          <div id="navbar-success" class="collapse navbar-collapse">
+        </form>
+      </div>
+    </nav>
+
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-secondary
+    text-bg-secondary"
+  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-secondary"
+          aria-controls="navbar-secondary"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-secondary" class="collapse navbar-collapse">
 
 <ul class="navbar-nav">
   <li class="nav-item">
@@ -2634,34 +2474,48 @@ public abstract class L2Char extends L2Object {
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
+          <span class="navbar-text">Text</span>
         </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-info text-dark mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-info"
-            aria-controls="navbar-info"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="light"
           >
-            <span class="navbar-toggler-icon"></span>
+          <button
+            class="btn btn-outline-light"
+            type="submit"
+            data-bs-theme="light"
+          >Search
           </button>
-          <div id="navbar-info" class="collapse navbar-collapse">
+        </form>
+      </div>
+    </nav>
+
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-success
+    text-bg-success"
+  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-success"
+          aria-controls="navbar-success"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-success" class="collapse navbar-collapse">
 
 <ul class="navbar-nav">
   <li class="nav-item">
@@ -2690,34 +2544,48 @@ public abstract class L2Char extends L2Object {
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
+          <span class="navbar-text">Text</span>
         </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-warning text-dark mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-warning"
-            aria-controls="navbar-warning"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="light"
           >
-            <span class="navbar-toggler-icon"></span>
+          <button
+            class="btn btn-outline-light"
+            type="submit"
+            data-bs-theme="light"
+          >Search
           </button>
-          <div id="navbar-warning" class="collapse navbar-collapse">
+        </form>
+      </div>
+    </nav>
+
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-info
+    text-bg-info"
+  data-bs-theme="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-info"
+          aria-controls="navbar-info"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-info" class="collapse navbar-collapse">
 
 <ul class="navbar-nav">
   <li class="nav-item">
@@ -2746,34 +2614,48 @@ public abstract class L2Char extends L2Object {
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
+          <span class="navbar-text">Text</span>
         </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-danger text-light mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-danger"
-            aria-controls="navbar-danger"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="dark"
           >
-            <span class="navbar-toggler-icon"></span>
+          <button
+            class="btn btn-outline-dark"
+            type="submit"
+            data-bs-theme="dark"
+          >Search
           </button>
-          <div id="navbar-danger" class="collapse navbar-collapse">
+        </form>
+      </div>
+    </nav>
+
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-warning
+    text-bg-warning"
+  data-bs-theme="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-warning"
+          aria-controls="navbar-warning"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-warning" class="collapse navbar-collapse">
 
 <ul class="navbar-nav">
   <li class="nav-item">
@@ -2802,34 +2684,48 @@ public abstract class L2Char extends L2Object {
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
+          <span class="navbar-text">Text</span>
         </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-light"
-            aria-controls="navbar-light"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="dark"
           >
-            <span class="navbar-toggler-icon"></span>
+          <button
+            class="btn btn-outline-dark"
+            type="submit"
+            data-bs-theme="dark"
+          >Search
           </button>
-          <div id="navbar-light" class="collapse navbar-collapse">
+        </form>
+      </div>
+    </nav>
+
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-danger
+    text-bg-danger"
+  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-danger"
+          aria-controls="navbar-danger"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-danger" class="collapse navbar-collapse">
 
 <ul class="navbar-nav">
   <li class="nav-item">
@@ -2858,34 +2754,48 @@ public abstract class L2Char extends L2Object {
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
+          <span class="navbar-text">Text</span>
         </div>
-      </nav>
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light mt-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#navs">Brand</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-dark"
-            aria-controls="navbar-dark"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="light"
           >
-            <span class="navbar-toggler-icon"></span>
+          <button
+            class="btn btn-outline-light"
+            type="submit"
+            data-bs-theme="light"
+          >Search
           </button>
-          <div id="navbar-dark" class="collapse navbar-collapse">
+        </form>
+      </div>
+    </nav>
+
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-light
+    text-bg-light"
+  data-bs-theme="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-light"
+          aria-controls="navbar-light"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-light" class="collapse navbar-collapse">
 
 <ul class="navbar-nav">
   <li class="nav-item">
@@ -2914,14 +2824,98 @@ public abstract class L2Char extends L2Object {
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-            <span class="navbar-text">Text</span>
-          </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
+          <span class="navbar-text">Text</span>
         </div>
-      </nav>
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="dark"
+          >
+          <button
+            class="btn btn-outline-dark"
+            type="submit"
+            data-bs-theme="dark"
+          >Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <nav
+  class="navbar navbar-expand-lg mt-2
+    bg-dark
+    text-bg-dark"
+  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navs">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-dark"
+          aria-controls="navbar-dark"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-dark" class="collapse navbar-collapse">
+
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#navs">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#navs">Link</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#navs"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#navs">Action</a></li>
+      <li><a class="dropdown-item" href="#navs">Another action</a></li>
+      <li><a class="dropdown-item" href="#navs">Something else here</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#navs">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+          <span class="navbar-text">Text</span>
+        </div>
+        <form class="d-flex" role="search">
+          <input
+            class="
+              form-control
+              me-2
+            "
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            data-bs-theme="light"
+          >
+          <button
+            class="btn btn-outline-light"
+            type="submit"
+            data-bs-theme="light"
+          >Search
+          </button>
+        </form>
+      </div>
+    </nav>
 
   </div>
   <div class="col-md-6">
@@ -3026,95 +3020,94 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="badges">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="badges mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-tag me-1"></i>
             Badges
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/badge/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Badge docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/badge/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Badge docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-md-6">
     <h3>Contextual badges</h3>
     <p>
 
-        <span class="badge text-bg-primary mb-1">Primary</span>
+        <span class="badge text-bg-primary me-2 mb-2">Primary</span>
 
-        <span class="badge text-bg-secondary mb-1">Secondary</span>
+        <span class="badge text-bg-secondary me-2 mb-2">Secondary</span>
 
-        <span class="badge text-bg-success mb-1">Success</span>
+        <span class="badge text-bg-success me-2 mb-2">Success</span>
 
-        <span class="badge text-bg-info mb-1">Info</span>
+        <span class="badge text-bg-info me-2 mb-2">Info</span>
 
-        <span class="badge text-bg-warning mb-1">Warning</span>
+        <span class="badge text-bg-warning me-2 mb-2">Warning</span>
 
-        <span class="badge text-bg-danger mb-1">Danger</span>
+        <span class="badge text-bg-danger me-2 mb-2">Danger</span>
 
-        <span class="badge text-bg-light mb-1">Light</span>
+        <span class="badge text-bg-light me-2 mb-2">Light</span>
 
-        <span class="badge text-bg-dark mb-1">Dark</span>
+        <span class="badge text-bg-dark me-2 mb-2">Dark</span>
 
     </p>
 
     <h3>Pill badges</h3>
     <p>
 
-        <span class="badge text-bg-primary rounded-pill mb-1">Primary</span>
+        <span class="badge text-bg-primary rounded-pill me-2 mb-2">Primary</span>
 
-        <span class="badge text-bg-secondary rounded-pill mb-1">Secondary</span>
+        <span class="badge text-bg-secondary rounded-pill me-2 mb-2">Secondary</span>
 
-        <span class="badge text-bg-success rounded-pill mb-1">Success</span>
+        <span class="badge text-bg-success rounded-pill me-2 mb-2">Success</span>
 
-        <span class="badge text-bg-info rounded-pill mb-1">Info</span>
+        <span class="badge text-bg-info rounded-pill me-2 mb-2">Info</span>
 
-        <span class="badge text-bg-warning rounded-pill mb-1">Warning</span>
+        <span class="badge text-bg-warning rounded-pill me-2 mb-2">Warning</span>
 
-        <span class="badge text-bg-danger rounded-pill mb-1">Danger</span>
+        <span class="badge text-bg-danger rounded-pill me-2 mb-2">Danger</span>
 
-        <span class="badge text-bg-light rounded-pill mb-1">Light</span>
+        <span class="badge text-bg-light rounded-pill me-2 mb-2">Light</span>
 
-        <span class="badge text-bg-dark rounded-pill mb-1">Dark</span>
+        <span class="badge text-bg-dark rounded-pill me-2 mb-2">Dark</span>
 
     </p>
 
     <h3>Links</h3>
     <p>
 
-        <a href="#badges" class="badge text-bg-primary mb-1">Primary</a>
+        <a href="#badges" class="badge text-bg-primary me-2 mb-2">Primary</a>
 
-        <a href="#badges" class="badge text-bg-secondary mb-1">Secondary</a>
+        <a href="#badges" class="badge text-bg-secondary me-2 mb-2">Secondary</a>
 
-        <a href="#badges" class="badge text-bg-success mb-1">Success</a>
+        <a href="#badges" class="badge text-bg-success me-2 mb-2">Success</a>
 
-        <a href="#badges" class="badge text-bg-info mb-1">Info</a>
+        <a href="#badges" class="badge text-bg-info me-2 mb-2">Info</a>
 
-        <a href="#badges" class="badge text-bg-warning mb-1">Warning</a>
+        <a href="#badges" class="badge text-bg-warning me-2 mb-2">Warning</a>
 
-        <a href="#badges" class="badge text-bg-danger mb-1">Danger</a>
+        <a href="#badges" class="badge text-bg-danger me-2 mb-2">Danger</a>
 
-        <a href="#badges" class="badge text-bg-light mb-1">Light</a>
+        <a href="#badges" class="badge text-bg-light me-2 mb-2">Light</a>
 
-        <a href="#badges" class="badge text-bg-dark mb-1">Dark</a>
+        <a href="#badges" class="badge text-bg-dark me-2 mb-2">Dark</a>
 
     </p>
   </div>
@@ -3128,34 +3121,33 @@ public abstract class L2Char extends L2Object {
     <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="alerts">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="alerts mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-exclamation-triangle me-1"></i>
             Alerts
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/alerts/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Alert docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/alerts/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Alert docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-12">
     <h3>Simple alerts</h3>
   </div>
@@ -3295,304 +3287,406 @@ public abstract class L2Char extends L2Object {
     </div>
 
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="popovers">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+    </div>
+  </section>
+  <section id="popovers mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-info-circle me-1"></i>
             Popovers
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/popovers/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Popover docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/tooltips/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Tooltip docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/popovers/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Popover docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/tooltips/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Tooltip docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-md-6">
     <h3>Popovers</h3>
-    <button type="button" class="btn btn-primary my-5" data-bs-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?" id="popover-toggler">
-      Toggle popover
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="popover"
+      data-bs-title="Popover title"
+      data-bs-content="And here's some amazing content. It's very engaging. Right?"
+      id="popover-toggler"
+    >Toggle popover
     </button>
   </div>
   <div class="col-md-6">
     <h3>Tooltips</h3>
-    <button type="button" class="btn btn-primary my-5" data-bs-toggle="tooltip" data-placement="right" title="Tooltip on right">
-      Tooltip on right
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-title="Tooltip on right"
+    >Tooltip on right
     </button>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="progress-bars">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+<div class="mb-3"></div>
+    </div>
+  </section>
+  <section id="progress-bars mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-spinner me-1"></i>
             Progress bars
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/progress/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Progress docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/progress/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Progress docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container"><div class="row px-5">
+    <div class="container"><div class="row px-5">
   <div class="col-md-6">
     <h3>Colored progress bars</h3>
     <div class="progress my-1">
-      <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+      <div
+        class="progress-bar"
+        role="progressbar"
+        style="width: 50%;"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100">Label
+      </div>
     </div>
 
 
 
       <div class="progress my-1">
-        <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar bg-success"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
       <div class="progress my-1">
-        <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar bg-info"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
       <div class="progress my-1">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar bg-warning"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
       <div class="progress my-1">
-        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar bg-danger"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
   </div>
   <div class="col-md-6">
     <h3>Striped progress bars</h3>
     <div class="progress my-1">
-      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+      <div
+        class="progress-bar progress-bar-striped"
+        role="progressbar"
+        style="width: 50%;"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100">Label
+      </div>
     </div>
 
       <div class="progress my-1">
-        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar progress-bar-striped bg-success"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
       <div class="progress my-1">
-        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar progress-bar-striped bg-info"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
       <div class="progress my-1">
-        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar progress-bar-striped bg-warning"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
       <div class="progress my-1">
-        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Label</div>
+        <div
+          class="progress-bar progress-bar-striped bg-danger"
+          role="progressbar"
+          style="width: 50%;"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100">Label
+        </div>
       </div>
 
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-<section id="modals">
-  <div class="bg-light text-bg-light p-3 mb-2">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-          <h1>
+<div class="mb-3"></div>
+    </div>
+  </section>
+  <section id="modals mt-0">
+    <div class="bg-light text-bg-light py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>
             <i class="fa fa-window-restore me-1"></i>
             Modals
-          </h1>
+          </h2>
           <h2>
-              <a
-                href="https://getbootstrap.com/docs/5.3/components/modal/"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-placement="bottom"
-                title="Modal docs"
-                style="text-decoration: none"
-              >
-                <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
-              </a>
+            <a
+              href="https://getbootstrap.com/docs/5.3/components/modal/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Modal docs"
+              data-bs-target="_blank"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
+            </a>
             <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
           </h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
+    <div class="container">
 <div class="row px-5">
-  <div class="col-md-6">
+  <div class="col-md-6 mt-3">
     <button
-      type="button"
       class="btn btn-primary"
+      type="button"
       data-bs-toggle="modal"
       data-bs-target="#exampleModalPopovers"
     >Launch demo modal
     </button>
-    <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
+    <div
+      id="exampleModalPopovers"
+      class="modal fade"
+      tabindex="-1"
+      aria-labelledby="exampleModalPopoversLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalPopoversLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="exampleModalPopoversLabel">
+              Modal title
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close">
+            </button>
           </div>
           <div class="modal-body">
             <h2 class="fs-5">Popover in a modal</h2>
-            <p>This <button class="btn btn-secondary" data-bs-toggle="popover" data-bs-content="Popover body content is set in this attribute." data-bs-container="#exampleModalPopovers" data-bs-original-title="Popover title">button</button> triggers a popover on click.</p>
+            <p>This
+              <button
+                class="btn btn-secondary"
+                data-bs-title="Popover title"
+                data-bs-toggle="popover"
+                data-bs-content="Popover body content is set in this attribute."
+                data-bs-container="#exampleModalPopovers"
+              >
+                button
+              </button>
+              triggers a popover on click.
+            </p>
             <hr>
             <h2 class="fs-5">Tooltips in a modal</h2>
-            <p><a href="#modals" data-bs-toggle="tooltip" data-bs-container="#exampleModalPopovers" data-bs-original-title="Tooltip">This link</a> and <a href="#modals" data-bs-toggle="tooltip" data-bs-container="#exampleModalPopovers" data-bs-original-title="Tooltip">that link</a> have tooltips on hover.</p>
+              <a
+                href="#modals"
+                data-bs-toggle="tooltip"
+                data-bs-container="#exampleModalPopovers"
+                data-bs-title="Tooltip">
+                  This link
+              </a> and
+              <a
+                href="#modals"
+                data-bs-toggle="tooltip"
+                data-bs-container="#exampleModalPopovers"
+                data-bs-title="Tooltip">
+                  that link
+              </a> have tooltips on hover.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+            >
+              Save changes
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  <div class="col-md-6 mt-3">
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
       Launch static backdrop modal
     </button>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div
+      id="staticBackdrop"
+      class="modal fade"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+            </button>
           </div>
           <div class="modal-body">
           I will not close if you click outside of me. Don't even try to press escape key.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+            >Understood
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-  </div>
-</section>
-<div class="mb-2"></div>
-</div></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>Bootstrap 5 test page by <a href="https://juzraai.github.io/">juzraai</a></p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js" integrity="sha512-uaZ0UXmB7NHxAxQawA8Ow2wWjdsedpRu7nJRSoI2mjnwtY8V5YiCWavoIpo1AhWPMLiW5iEeavmA3JJ2+1idUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/js/bootstrap.min.js" integrity="sha512-wOLiP6uL5tNrV1FiutKtAyQGGJ1CWAsqQ6Kp2XZ12/CvZxw8MvNJfdhh0yTwjPIir4SWag2/MHrseR7PRmNtvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js" integrity="sha512-O6R6IBONpEcZVYJAmSC+20vdsM07uFuGjFf0n/Zthm8sOFW+lAq/OK1WOL8vk93GBDxtMIy6ocbj6lduyeLuqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js" integrity="sha512-zPB79j2C+3sFS9zcA3vg/z6bVKzJVEyu9pY5w89akQRys76zpAT2t6S3wZKla3QQ14O5l/Yt0RUQ/DHXx82Y5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/override.js" defer></script>
-        <script src="search/main.js" defer></script>
-        <script src="js/base.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+  </section>
+</main>
 </div>
-
-    </body>
+<footer
+  class="bg-dark text-bg-dark mt-5 p-3"
+  data-bs-theme="dark"
+>
+  <div class="container">
+    Bootstrap 5 test page by
+    <a href="https://redtide.github.io/"
+      class="text-info">redtide</a>
+    &middot;
+    <a href="https://github.com/redtide/bootstrap5-test-page/" class="text-info">Source code</a>
+  </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js" integrity="sha512-uaZ0UXmB7NHxAxQawA8Ow2wWjdsedpRu7nJRSoI2mjnwtY8V5YiCWavoIpo1AhWPMLiW5iEeavmA3JJ2+1idUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/js/bootstrap.min.js" integrity="sha512-wOLiP6uL5tNrV1FiutKtAyQGGJ1CWAsqQ6Kp2XZ12/CvZxw8MvNJfdhh0yTwjPIir4SWag2/MHrseR7PRmNtvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js" integrity="sha512-O6R6IBONpEcZVYJAmSC+20vdsM07uFuGjFf0n/Zthm8sOFW+lAq/OK1WOL8vk93GBDxtMIy6ocbj6lduyeLuqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js" integrity="sha512-zPB79j2C+3sFS9zcA3vg/z6bVKzJVEyu9pY5w89akQRys76zpAT2t6S3wZKla3QQ14O5l/Yt0RUQ/DHXx82Y5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/color-modes.js" defer></script>
+    <script>
+      const popoverTriggerList =
+        document.querySelectorAll('[data-bs-toggle="popover"]');
+      const tooltipTriggerList =
+        document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const popoverList =
+        [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+      const tooltipList =
+        [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+      anchors.options.placement = 'left';
+      anchors.add();
+    </script>
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.4.2
-Build Date UTC : 2023-04-27 22:51:51.379740+00:00
--->
