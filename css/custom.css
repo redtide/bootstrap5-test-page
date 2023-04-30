@@ -1,0 +1,20 @@
+html {
+    /* csslint ignore:start */
+    /* The nav header is 3.5rem high, plus 20px for the margin-top of the
+       main container. */
+    scroll-padding-top: 63px;
+    /* csslint ignore:end */
+}
+body > .container {
+    margin-top: 63px;
+    min-height: 400px;
+}
+/*
+section[id]:before {
+  display: block;
+  height: 63px;
+  margin-top: -63px;
+  visibility: hidden;
+  content: "";
+}
+*/

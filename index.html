@@ -19,7 +19,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/docs.css" rel="stylesheet">
   </head>
-  <body data-spy="scroll" data-target="#test-navbar" data-offset="100"><div markdown="0">
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#test-navbar"
+    data-bs-offset="100"
+    tabindex="0"
+  ><div markdown="0">
 
 <nav
   class="navbar sticky-top navbar-expand-md
@@ -47,7 +52,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Typography"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-paragraph mx-2"></span>
                       <span class="d-md-none">Typography</span>
@@ -60,7 +64,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Images"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-picture-o mx-2"></span>
                       <span class="d-md-none">Images</span>
@@ -73,7 +76,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Tables"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-table mx-2"></span>
                       <span class="d-md-none">Tables</span>
@@ -86,7 +88,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="List groups"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-list-ul mx-2"></span>
                       <span class="d-md-none">List groups</span>
@@ -99,7 +100,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Buttons"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-square mx-2"></span>
                       <span class="d-md-none">Buttons</span>
@@ -112,7 +112,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Offcanvas"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-arrow-right mx-2"></span>
                       <span class="d-md-none">Offcanvas</span>
@@ -125,7 +124,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Jumbotrons"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-bookmark mx-2"></span>
                       <span class="d-md-none">Jumbotrons</span>
@@ -138,7 +136,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Cards"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-square-o mx-2"></span>
                       <span class="d-md-none">Cards</span>
@@ -151,7 +148,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Forms"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-pencil mx-2"></span>
                       <span class="d-md-none">Forms</span>
@@ -164,7 +160,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Navs"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-bars mx-2"></span>
                       <span class="d-md-none">Navs</span>
@@ -177,7 +172,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Badges"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-tag mx-2"></span>
                       <span class="d-md-none">Badges</span>
@@ -190,7 +184,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Alerts"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-exclamation-triangle mx-2"></span>
                       <span class="d-md-none">Alerts</span>
@@ -203,7 +196,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Popovers"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-info-circle mx-2"></span>
                       <span class="d-md-none">Popovers</span>
@@ -216,7 +208,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Progress bars"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-spinner mx-2"></span>
                       <span class="d-md-none">Progress bars</span>
@@ -229,7 +220,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Modals"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-window-restore mx-2"></span>
                       <span class="d-md-none">Modals</span>
@@ -257,7 +247,6 @@
                       data-bs-placement="bottom"
                       data-bs-title="Source code"
                       data-bs-toggle="tooltip"
-
                     >
                       <span class="fa fa-github mx-2"></span>
                       <span class="d-md-none">Source code</span>
@@ -320,8 +309,8 @@
 </nav>
 
 <main>
-  <section id="typography mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="typography" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -334,7 +323,7 @@
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Typography docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -344,7 +333,7 @@
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Code docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -354,7 +343,7 @@
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Color utility docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -364,19 +353,21 @@
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Text utility docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
     </div>
     <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3>Headings</h3>
+    <h3 class="mt-5">Headings</h3>
     <h1>h1. Bootstrap heading</h1>
     <h2>h2. Bootstrap heading</h2>
     <h3>h3. Bootstrap heading</h3>
@@ -384,10 +375,10 @@
     <h5>h5. Bootstrap heading</h5>
     <h6>h6. Bootstrap heading</h6>
 
-    <h3>Lead</h3>
+    <h3 class="mt-5">Lead</h3>
     <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
-    <h3>Styles</h3>
+    <h3 class="mt-5">Styles</h3>
     <p>You can use the mark tag to
       <mark>highlight</mark> text.</p>
     <p>
@@ -408,7 +399,7 @@
     <p class="text-body-secondary">And this is a muted text.</p>
     <p><abbr title="Abbreviation">abbr</abbr> <abbr title="Abbreviation with initialism" class="initialism">abbr+init</abbr></p>
 
-    <h3>Colors</h3>
+    <h3 class="mt-5">Colors</h3>
     <p>
 
       <span class="text-bg-primary">.text-bg-primary</span>
@@ -448,7 +439,7 @@
 
     </p>
 
-    <h3>Inline code</h3>
+    <h3 class="mt-5">Inline code</h3>
     <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
     <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
     <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br> To edit settings, press <kbd><kbd>ctrl</kbd>            + <kbd>,</kbd></kbd>
@@ -456,13 +447,13 @@
     <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
   </div>
   <div class="col-md-6">
-    <h3>Displays</h3>
+    <h3 class="mt-5">Displays</h3>
     <h1 class="display-1">Display 1</h1>
     <h1 class="display-2">Display 2</h1>
     <h1 class="display-3">Display 3</h1>
     <h1 class="display-4">Display 4</h1>
 
-    <h3>Sample body</h3>
+    <h3 class="mt-5">Sample body</h3>
     <p class="text-justify">
       Lórum ipse - mint senyért - nyált <a href="javascript:void(0)">ságos iség</a>, ahol beles metás, csaprozás, vermény, csaprát
       és más meni zsorlóca kuncáskodik. Mosztag, férzet napé, fuvódás 11, törnyélés ; valamint szuvegés vitancs: a dozmus drikója,
@@ -474,7 +465,7 @@
       a nyagondos hizmusok „énemlő” lárias mizmusait?
     </p>
 
-    <h3>Code block</h3>
+    <h3 class="mt-5">Code block</h3>
     <pre><code>/**
  * @author John Smith &lt;john.smith@example.com&gt;
  */
@@ -495,7 +486,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3>Blockquote</h3>
+    <h3 class="mt-5">Blockquote</h3>
     <figure class="text-start">
       <blockquote class="blockquote">
         <p>A well-known quote, contained in a blockquote element.</p>
@@ -508,7 +499,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12 mb-0">
-    <h3>...centered</h3>
+    <h3 class="mt-5">...centered</h3>
     <figure class="text-center">
       <blockquote class="blockquote">
         <p>A well-known quote, contained in a blockquote element.</p>
@@ -521,7 +512,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3>...on right</h3>
+    <h3 class="mt-5">...on right</h3>
     <figure class="text-end">
       <blockquote class="blockquote">
         <p>A well-known quote, contained in a blockquote element.</p>
@@ -534,7 +525,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-4">
-    <h3>List</h3>
+    <h3 class="mt-5">List</h3>
     <ul>
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -554,7 +545,7 @@ public abstract class L2Char extends L2Object {
     </ul>
   </div>
   <div class="col-4">
-    <h3>...unstyled</h3>
+    <h3 class="mt-5">...unstyled</h3>
     <ul class="list-unstyled">
       <li>This is a list.</li>
       <li>It appears completely unstyled.</li>
@@ -571,7 +562,7 @@ public abstract class L2Char extends L2Object {
     </ul>
   </div>
   <div class="col-4">
-    <h3>...inline</h3>
+    <h3 class="mt-5">...inline</h3>
       <ul class="list-inline">
         <li class="list-inline-item">This is a list item.</li>
         <li class="list-inline-item">And another one.</li>
@@ -581,7 +572,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3>Definition list</h3>
+    <h3 class="mt-5">Definition list</h3>
   </div>
 </div>
 <dl class="row">
@@ -607,7 +598,7 @@ public abstract class L2Char extends L2Object {
 
 <div class="row px-5">
   <div class="col-12">
-    <h3>Background colors</h3>
+    <h3 class="mt-5">Background colors</h3>
   </div>
 
   <div class="col-md-4">
@@ -646,8 +637,8 @@ public abstract class L2Char extends L2Object {
 </div>
     </div>
   </section>
-  <section id="images mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="images" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -660,7 +651,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Image docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -670,7 +661,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Figure docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -680,34 +671,36 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Media object docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
     </div>
     <div class="container"><div class="row px-5">
   <div class="col-12">
-    <h3>Responsive image</h3>
+    <h3 class="mt-5">Responsive image</h3>
     <img data-src="holder.js/100px250" alt="responsive image" class="img-fluid">
   </div>
   <div class="col-md-6">
-    <h3>Thumbnail</h3>
+    <h3 class="mt-5">Thumbnail</h3>
     <img data-src="holder.js/200x200" alt="thumbnail image" class="img-thumbnail">
   </div>
   <div class="col-md-6">
-    <h3>Figure</h3>
+    <h3 class="mt-5">Figure</h3>
     <figure class="figure">
       <img data-src="holder.js/300x200" class="figure-img img-fluid rounded" alt="Figure">
       <figcaption class="figure-caption">A caption for the above image.</figcaption>
     </figure>
   </div>
   <div class="col-12">
-    <h3>Media</h3>
+    <h3 class="mt-5">Media</h3>
     <p>
       In v5 the <code>.media</code> component was dropped as it can be
       easily replicated with utilities.
@@ -740,8 +733,8 @@ public abstract class L2Char extends L2Object {
 <div class="mb-2"></div>
     </div>
   </section>
-  <section id="tables mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="tables" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -754,12 +747,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Table docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -767,7 +762,7 @@ public abstract class L2Char extends L2Object {
     <div class="container">
 <div class="row px-5">
   <div class="col-md-6">
-    <h3>Table</h3>
+    <h3 class="mt-5">Table</h3>
 
 <table class="table table-bordered table-striped table-hover">
   <thead>
@@ -808,7 +803,7 @@ public abstract class L2Char extends L2Object {
 </table>
   </div>
   <div class="col-md-6">
-    <h3>Inversed table</h3>
+    <h3 class="mt-5">Inversed table</h3>
 
 <table class="table table-bordered table-striped table-hover table-dark">
   <thead>
@@ -851,7 +846,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-md-6">
-    <h3>Table with colors</h3>
+    <h3 class="mt-5">Table with colors</h3>
     <p><strong>Note: </strong> Use <code>table-*</code> classes.</p>
     <table class="table table-hover">
       <thead>
@@ -926,7 +921,7 @@ public abstract class L2Char extends L2Object {
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Inversed table with colors</h3>
+    <h3 class="mt-5">Inversed table with colors</h3>
     <p><strong>Note: </strong> Use <code>table-*</code> classes, also for colors.</p>
     <table class="table table-hover table-dark">
       <thead>
@@ -997,7 +992,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-md-6">
-    <h3>Default header</h3>
+    <h3 class="mt-5">Default header</h3>
 
 <table class="table">
   <thead class="table-light">
@@ -1038,7 +1033,7 @@ public abstract class L2Char extends L2Object {
 </table>
   </div>
   <div class="col-md-6">
-    <h3>Inversed header</h3>
+    <h3 class="mt-5">Inversed header</h3>
 
 <table class="table">
   <thead class="table-dark">
@@ -1081,7 +1076,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-md-6">
-    <h3>Small table</h3>
+    <h3 class="mt-5">Small table</h3>
 
 <table class="table table-sm">
   <thead>
@@ -1124,8 +1119,8 @@ public abstract class L2Char extends L2Object {
 </div>
     </div>
   </section>
-  <section id="list-groups mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="list-groups" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -1138,12 +1133,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="List group docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -1153,7 +1150,7 @@ public abstract class L2Char extends L2Object {
 
   </div>
   <div class="col-md-6">
-    <h3>...with actions and colors</h3>
+    <h3 class="mt-5">...with actions and colors</h3>
     <div class="list-group">
       <button type="button" class="list-group-item list-group-item-action">This is a regular list group item</button>
 
@@ -1192,7 +1189,7 @@ public abstract class L2Char extends L2Object {
   </div>
 
   <div class="col-md-6">
-    <h3>...with custom content</h3>
+    <h3 class="mt-5">...with custom content</h3>
     <ul class="list-group">
         <a href="#list-groups">
       <li class="list-group-item d-flex justify-content-between align-items-start active" aria-current="true">
@@ -1235,8 +1232,8 @@ public abstract class L2Char extends L2Object {
 <div class="mb-3"></div>
     </div>
   </section>
-  <section id="buttons mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="buttons" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -1249,7 +1246,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Button docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -1259,7 +1256,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Button group docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -1269,7 +1266,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Pagination docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -1279,12 +1276,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Dropdown docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -1292,7 +1291,7 @@ public abstract class L2Char extends L2Object {
     <div class="container">
 <div class="row px-5">
   <div class="col-12">
-    <h3>General buttons</h3>
+    <h3 class="mt-5">General buttons</h3>
     <div class="my-1">
 
         <button class="btn btn-primary">Primary</button>
@@ -1360,7 +1359,7 @@ public abstract class L2Char extends L2Object {
       <button class="btn" disabled>Default</button>
     </div>
 
-    <h3>Outline buttons</h3>
+    <h3 class="mt-5">Outline buttons</h3>
     <div class="my-1">
 
         <button class="btn btn-outline-primary">Primary</button>
@@ -1426,7 +1425,7 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
   <div class="col-md-6">
-    <h3>Sizes</h3>
+    <h3 class="mt-5">Sizes</h3>
     <div class="my-1">
       <button type="button" class="btn btn-primary btn-lg">Large button</button>
       <button type="button" class="btn btn-primary">Normal button</button>
@@ -1434,7 +1433,7 @@ public abstract class L2Char extends L2Object {
     </div>
   </div>
   <div class="col-md-6">
-    <h3>Groups and dropdown</h3>
+    <h3 class="mt-5">Groups and dropdown</h3>
     <div class="btn-toolbar my-1" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group me-2" role="group" aria-label="First group">
         <button type="button" class="btn btn-secondary">1</button>
@@ -1488,7 +1487,7 @@ public abstract class L2Char extends L2Object {
   </div>
 
   <div class="col-12">
-    <h3>Pagination</h3>
+    <h3 class="mt-5">Pagination</h3>
     <nav aria-label="Pagination example">
       <div class="container">
         <ul class="pagination">
@@ -1513,8 +1512,8 @@ public abstract class L2Char extends L2Object {
 </div>
     </div>
   </section>
-  <section id="offcanvas mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="offcanvas" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -1527,12 +1526,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Offcanvas docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -1562,8 +1563,8 @@ public abstract class L2Char extends L2Object {
 <div class="mb-3"></div>
     </div>
   </section>
-  <section id="jumbotrons mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="jumbotrons" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -1576,12 +1577,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Jumbotron docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -1616,8 +1619,8 @@ public abstract class L2Char extends L2Object {
 <div class="mb-3"></div>
     </div>
   </section>
-  <section id="cards mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="cards" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -1630,19 +1633,21 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Card docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
     </div>
     <div class="container"><div class="row px-5">
   <div class="col-12">
-    <h3>Various types of cards</h3>
+    <h3 class="mt-5">Various types of cards</h3>
     <div class="card-columns">
       <div class="card">
         <div class="card-body">
@@ -1777,7 +1782,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3>Colored cards</h3>
+    <h3 class="mt-5">Colored cards</h3>
   </div>
 
   <div class="col-sm-6 col-md-4 col-xl-3">
@@ -1863,7 +1868,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3>Cards with colored borders</h3>
+    <h3 class="mt-5">Cards with colored borders</h3>
   </div>
 
   <div class="col-sm-6 col-md-4 col-xl-3">
@@ -1949,8 +1954,8 @@ public abstract class L2Char extends L2Object {
 </div>
     </div>
   </section>
-  <section id="forms mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="forms" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -1963,7 +1968,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Form docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -1973,12 +1978,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Input group docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -1986,7 +1993,7 @@ public abstract class L2Char extends L2Object {
     <div class="container"><form>
   <div class="row px-5">
     <div class="col-md-6">
-      <h3>Text fields</h3>
+      <h3 class="mt-5">Text fields</h3>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -2075,7 +2082,7 @@ public abstract class L2Char extends L2Object {
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
-      <h3>Layouts</h3>
+      <h3 class="mt-5">Layouts</h3>
       <div class="form-group">
         <div class="row">
           <div class="col">
@@ -2124,7 +2131,7 @@ public abstract class L2Char extends L2Object {
       </div>
     </div>
     <div class="col-md-6">
-      <h3>Selects</h3>
+      <h3 class="mt-5">Selects</h3>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Example select</label>
         <select class="form-control" id="exampleFormControlSelect1">
@@ -2169,7 +2176,7 @@ public abstract class L2Char extends L2Object {
         </select>
       </div>
 
-      <h3>Checkboxes</h3>
+      <h3 class="mt-5">Checkboxes</h3>
       <div class="form-check">
         <label class="form-check-label">
           <input class="form-check-input" type="checkbox" value="">
@@ -2218,7 +2225,7 @@ public abstract class L2Char extends L2Object {
         </label>
       </div>
 
-      <h3>Radio buttons</h3>
+      <h3 class="mt-5">Radio buttons</h3>
       <div class="form-check">
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -2278,8 +2285,8 @@ public abstract class L2Char extends L2Object {
 <div class="mb-3"></div>
     </div>
   </section>
-  <section id="navs mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="navs" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -2292,7 +2299,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Navbar docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -2302,7 +2309,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Navs and tabs docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -2312,7 +2319,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Breadcrumb docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -2322,7 +2329,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Dropdown docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -2332,7 +2339,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Scrollspy docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -2342,12 +2349,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Position docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -2355,10 +2364,10 @@ public abstract class L2Char extends L2Object {
     <div class="container">
 <div class="row px-5">
   <div class="col-12">
-    <h3>Navbars</h3>
+    <h3 class="mt-5">Navbars</h3>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-primary
     text-bg-primary"
   data-bs-theme="dark">
@@ -2428,7 +2437,7 @@ public abstract class L2Char extends L2Object {
     </nav>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-secondary
     text-bg-secondary"
   data-bs-theme="dark">
@@ -2498,7 +2507,7 @@ public abstract class L2Char extends L2Object {
     </nav>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-success
     text-bg-success"
   data-bs-theme="dark">
@@ -2568,7 +2577,7 @@ public abstract class L2Char extends L2Object {
     </nav>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-info
     text-bg-info"
   data-bs-theme="light">
@@ -2638,7 +2647,7 @@ public abstract class L2Char extends L2Object {
     </nav>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-warning
     text-bg-warning"
   data-bs-theme="light">
@@ -2708,7 +2717,7 @@ public abstract class L2Char extends L2Object {
     </nav>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-danger
     text-bg-danger"
   data-bs-theme="dark">
@@ -2778,7 +2787,7 @@ public abstract class L2Char extends L2Object {
     </nav>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-light
     text-bg-light"
   data-bs-theme="light">
@@ -2848,7 +2857,7 @@ public abstract class L2Char extends L2Object {
     </nav>
 
     <nav
-  class="navbar navbar-expand-lg mt-2
+  class="navbar navbar-expand-lg my-2
     bg-dark
     text-bg-dark"
   data-bs-theme="dark">
@@ -2919,7 +2928,7 @@ public abstract class L2Char extends L2Object {
 
   </div>
   <div class="col-md-6">
-    <h3 class="mt-2">Tabs</h3>
+    <h3 class="mt-5">Tabs</h3>
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -2949,7 +2958,7 @@ public abstract class L2Char extends L2Object {
   </li>
 </ul>
 
-    <h3 class="mt-2">Pills</h3>
+    <h3 class="mt-5">Pills</h3>
 
 <ul class="nav nav-pills">
   <li class="nav-item">
@@ -2980,7 +2989,7 @@ public abstract class L2Char extends L2Object {
 </ul>
   </div>
   <div class="col-md-6">
-    <h3 class="mt-2">Vertical pills</h3>
+    <h3 class="mt-5">Vertical pills</h3>
 
 <ul class="nav nav-pills flex-column">
   <li class="nav-item">
@@ -3011,7 +3020,7 @@ public abstract class L2Char extends L2Object {
 </ul>
   </div>
   <div class="col-12">
-    <h3 class="mt-2">Breadcrumbs</h3>
+    <h3 class="mt-5">Breadcrumbs</h3>
     <div class="breadcrumb">
       <a class="breadcrumb-item" href="#">Home</a>
       <a class="breadcrumb-item" href="#">Library</a>
@@ -3022,8 +3031,8 @@ public abstract class L2Char extends L2Object {
 </div>
     </div>
   </section>
-  <section id="badges mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="badges" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -3036,19 +3045,21 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Badge docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
     </div>
     <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3>Contextual badges</h3>
+    <h3 class="mt-5">Contextual badges</h3>
     <p>
 
         <span class="badge text-bg-primary me-2 mb-2">Primary</span>
@@ -3069,7 +3080,7 @@ public abstract class L2Char extends L2Object {
 
     </p>
 
-    <h3>Pill badges</h3>
+    <h3 class="mt-5">Pill badges</h3>
     <p>
 
         <span class="badge text-bg-primary rounded-pill me-2 mb-2">Primary</span>
@@ -3090,7 +3101,7 @@ public abstract class L2Char extends L2Object {
 
     </p>
 
-    <h3>Links</h3>
+    <h3 class="mt-5">Links</h3>
     <p>
 
         <a href="#badges" class="badge text-bg-primary me-2 mb-2">Primary</a>
@@ -3112,7 +3123,7 @@ public abstract class L2Char extends L2Object {
     </p>
   </div>
   <div class="col-md-6">
-    <h3>Badges in headings</h3>
+    <h3 class="mt-5">Badges in headings</h3>
     <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
     <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
     <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
@@ -3123,8 +3134,8 @@ public abstract class L2Char extends L2Object {
 </div>
     </div>
   </section>
-  <section id="alerts mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="alerts" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -3137,19 +3148,21 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Alert docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
     </div>
     <div class="container"><div class="row px-5">
   <div class="col-12">
-    <h3>Simple alerts</h3>
+    <h3 class="mt-5">Simple alerts</h3>
   </div>
 
     <div class="col-md-4">
@@ -3203,7 +3216,7 @@ public abstract class L2Char extends L2Object {
 </div>
 <div class="row px-5">
   <div class="col-12">
-    <h3>Alerts with additional content</h3>
+    <h3 class="mt-5">Alerts with additional content</h3>
   </div>
 
     <div class="col-md-4">
@@ -3289,8 +3302,8 @@ public abstract class L2Char extends L2Object {
 </div>
     </div>
   </section>
-  <section id="popovers mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="popovers" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -3303,7 +3316,7 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Popover docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
@@ -3313,19 +3326,21 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Tooltip docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
     </div>
     <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3>Popovers</h3>
+    <h3 class="mt-5">Popovers</h3>
     <button
       type="button"
       class="btn btn-primary"
@@ -3337,7 +3352,7 @@ public abstract class L2Char extends L2Object {
     </button>
   </div>
   <div class="col-md-6">
-    <h3>Tooltips</h3>
+    <h3 class="mt-5">Tooltips</h3>
     <button
       type="button"
       class="btn btn-primary"
@@ -3351,8 +3366,8 @@ public abstract class L2Char extends L2Object {
 <div class="mb-3"></div>
     </div>
   </section>
-  <section id="progress-bars mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="progress-bars" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -3365,19 +3380,21 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Progress docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
     </div>
     <div class="container"><div class="row px-5">
   <div class="col-md-6">
-    <h3>Colored progress bars</h3>
+    <h3 class="mt-5">Colored progress bars</h3>
     <div class="progress my-1">
       <div
         class="progress-bar"
@@ -3437,7 +3454,7 @@ public abstract class L2Char extends L2Object {
 
   </div>
   <div class="col-md-6">
-    <h3>Striped progress bars</h3>
+    <h3 class="mt-5">Striped progress bars</h3>
     <div class="progress my-1">
       <div
         class="progress-bar progress-bar-striped"
@@ -3498,8 +3515,8 @@ public abstract class L2Char extends L2Object {
 <div class="mb-3"></div>
     </div>
   </section>
-  <section id="modals mt-0">
-    <div class="bg-light text-bg-light py-2">
+  <section id="modals" class="mb-5 pt-5">
+    <div class="bg-light text-bg-light py-4 mb-5">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>
@@ -3512,12 +3529,14 @@ public abstract class L2Char extends L2Object {
               data-bs-toggle="tooltip"
               data-bs-placement="bottom"
               data-bs-title="Modal docs"
-              data-bs-target="_blank"
+              target="_blank"
               style="text-decoration: none"
             >
               <i class="fa fa-book fa-fw bg-light text-bg-light"></i>
             </a>
-            <a href="#top"><i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i></a>
+            <a href="#top" class="me-3">
+              <i class="fa fa-chevron-up fa-fw bg-light text-bg-light"></i>
+            </a>
           </h2>
         </div>
       </div>
@@ -3669,6 +3688,7 @@ public abstract class L2Char extends L2Object {
     <a href="https://github.com/redtide/bootstrap5-test-page/" class="text-info">Source code</a>
   </div>
 </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" integrity="sha512-YHQNqPhxuCY2ddskIbDlZfwY6Vx3L3w9WRbyJCY81xpqLmrM6rL2+LocBgeVHwGY9SXYfQWJ+lcEWx1fKS2s8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js" integrity="sha512-uaZ0UXmB7NHxAxQawA8Ow2wWjdsedpRu7nJRSoI2mjnwtY8V5YiCWavoIpo1AhWPMLiW5iEeavmA3JJ2+1idUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/js/bootstrap.min.js" integrity="sha512-wOLiP6uL5tNrV1FiutKtAyQGGJ1CWAsqQ6Kp2XZ12/CvZxw8MvNJfdhh0yTwjPIir4SWag2/MHrseR7PRmNtvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
