@@ -34,9 +34,9 @@ theme:
 plugins:
   macros:
     include_yaml:
-    - colors:    "docs/.data/colors.yml"
-    - sections:  "docs/.data/sections.yml"
-    include_dir: "docs/.include"
+    - colors:    "data/colors.yml"
+    - sections:  "data/sections.yml"
+    include_dir: "include"
     verbose: true
 
 watch:

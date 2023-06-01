@@ -1,6 +1,22 @@
 {%- import "macros/nav_link.j2" as nav_link with context %}
-{%- import "macros/color_modes.j2" as color_modes with context %}
-<nav {{- color_modes.set_nav_style("navbar sticky-top navbar-expand-md") }}>
+{%- if config.theme.base_url == "bootstrap5-test-page" %}
+  {%- import "macros/color_modes.j2" as color_modes with context %}
+{%- endif -%}
+
+{%- if config.theme.nav_style %}
+  {%- set bg_style = config.theme.nav_style %}
+{%- else %}
+  {%- set bg_style = "light" %}
+{%- endif %}
+<nav class="
+  navbar
+  sticky-top
+  navbar-expand-md
+  bg-{{- bg_style }}
+  text-bg-{{- bg_style -}}
+"
+  data-bs-theme="{{- bg_style }}"
+>
   <div class="container">
     <button
       class="navbar-toggler"
@@ -24,8 +40,10 @@
         {%- set link = "https://getbootstrap.com/docs/" + config.theme.bootstrap_version + '/' %}
         {{- nav_link.add(link, "Bootstrap documentation", "book", true) }}
         {{- nav_link.add(config.repo_url, "Source code", config.repo_name|lower|trim) }}
-        {{- color_modes.get_icons() }}
-        {{- color_modes.get_dropdown() }}
+        {%- if config.theme.base_url == "bootstrap5-test-page" %}
+          {{- color_modes.get_icons() }}
+          {{- color_modes.get_dropdown() }}
+        {%- endif %}
       </ul>
     </div>
   </div>
